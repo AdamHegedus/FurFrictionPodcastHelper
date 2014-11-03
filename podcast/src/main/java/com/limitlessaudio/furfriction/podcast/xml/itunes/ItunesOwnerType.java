@@ -5,11 +5,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-/**<p>
- * Java class for itunesOwner complex type.
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+/**<p>The &lt;itunes:owner> tag contains contact information for the owner of the podcast
+ * intended to be used for administrative communication about the podcast.</p>
+ * <p>The email address of the owner should be included in a nested &lt;itunes:email> element.
+ * Include the name of the owner in a nested &lt;itunes:name> element.</p>
+ * <p>The following schema fragment specifies the expected content contained within
+ * this class.</p>
  * <pre>
  * &lt;complexType name="itunesOwnerType">
  *   &lt;complexContent>
@@ -41,7 +42,7 @@ public class ItunesOwnerType {
     }
 
     /**Sets the name of the itunesOwner.
-     * Setter method accepts {@link String} as parameter
+     * Setter method accepts {@link String} as parameter.
      * @param name
      *            allowed object is {@link String }
      */
@@ -59,7 +60,7 @@ public class ItunesOwnerType {
     }
 
     /**Sets the email of the itunesOwner.
-     * Setter method accepts {@link String} as parameter
+     * Setter method accepts {@link String} as parameter.
      * @param email
      *            allowed object is {@link String }
      */

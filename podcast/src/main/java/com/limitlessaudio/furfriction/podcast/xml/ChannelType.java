@@ -333,18 +333,19 @@ public class ChannelType {
         this.itunesExplicit = itunesExplicit;
     }
 
-    /**
-     * Gets the value of the itunesOwner property.
+    /**The &lt;itunes:owner> tag contains contact information for the owner of the podcast
+     * intended to be used for administrative communication about the podcast.
+     * Getter method returns {@link ItunesOwnerType} object.
      * @return itunesOwner is {@link ItunesOwnerType }
      */
     public ItunesOwnerType getItunesOwner() {
         return itunesOwner;
     }
 
-    /**
-     * Sets the value of the itunesOwner property.
-     * @param itunesOwner
-     *            allowed object is {@link ItunesOwnerType }
+    /**The &lt;itunes:owner> tag contains contact information for the owner of the podcast
+     * intended to be used for administrative communication about the podcast.
+     * Setter method accepts {@link ItunesOwnerType} as parameter.
+     * @param itunesOwner the itunesOwner to set.
      */
     public void setItunesOwner(ItunesOwnerType itunesOwner) {
         this.itunesOwner = itunesOwner;
