@@ -15,11 +15,10 @@ import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesOwnerType;
 /**
  * <p>
  * Java class for channelType complex type.
- * 
  * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
+
  * <pre>
  * &lt;complexType name="channelType">
  *   &lt;complexContent>
@@ -110,7 +109,6 @@ public class ChannelType {
 
     /**
      * Gets the value of the title property.
-     * 
      * @return atomLink is {@link AtomLinkType }
      */
     public AtomLinkType getAtomLink() {
@@ -119,10 +117,8 @@ public class ChannelType {
 
     /**
      * Sets the value of the title property.
-     * 
      * @param atomLink
      *            allowed object is {@link AtomLinkType }
-     * 
      */
     public void setAtomLink(AtomLinkType atomLink) {
         this.atomLink = atomLink;
@@ -130,9 +126,7 @@ public class ChannelType {
 
     /**
      * Gets the value of the title property.
-     * 
      * @return title is {@link String }
-     * 
      */
     public String getTitle() {
         return title;
@@ -140,10 +134,8 @@ public class ChannelType {
 
     /**
      * Sets the value of the title property.
-     * 
      * @param title
      *            allowed object is {@link String }
-     * 
      */
     public void setTitle(String title) {
         this.title = title;
@@ -151,9 +143,7 @@ public class ChannelType {
 
     /**
      * Gets the value of the link property.
-     * 
      * @return link is {@link String }
-     * 
      */
     public String getLink() {
         return link;
@@ -161,10 +151,8 @@ public class ChannelType {
 
     /**
      * Sets the value of the link property.
-     * 
      * @param link
      *            allowed object is {@link String }
-     * 
      */
     public void setLink(String link) {
         this.link = link;
@@ -172,9 +160,7 @@ public class ChannelType {
 
     /**
      * Gets the value of the language property.
-     * 
      * @return language is {@link String }
-     * 
      */
     public String getLanguage() {
         return language;
@@ -182,10 +168,8 @@ public class ChannelType {
 
     /**
      * Sets the value of the language property.
-     * 
      * @param language
      *            allowed object is {@link String }
-     * 
      */
     public void setLanguage(String language) {
         this.language = language;
@@ -193,9 +177,7 @@ public class ChannelType {
 
     /**
      * Gets the value of the description property.
-     * 
      * @return description is {@link String }
-     * 
      */
     public String getDescription() {
         return description;
@@ -203,10 +185,8 @@ public class ChannelType {
 
     /**
      * Sets the value of the description property.
-     * 
      * @param description
      *            allowed object is {@link String }
-     * 
      */
     public void setDescription(String description) {
         this.description = description;
@@ -214,9 +194,7 @@ public class ChannelType {
 
     /**
      * Gets the value of the pubDate property.
-     * 
      * @return pubDate is {@link String }
-     * 
      */
     public String getPubDate() {
         return pubDate;
@@ -224,10 +202,8 @@ public class ChannelType {
 
     /**
      * Sets the value of the pubDate property.
-     * 
      * @param pubDate
      *            allowed object is {@link String }
-     * 
      */
     public void setPubDate(String pubDate) {
         this.pubDate = pubDate;
@@ -235,9 +211,7 @@ public class ChannelType {
 
     /**
      * Gets the value of the image property.
-     * 
      * @return image is {@link ImageType }
-     * 
      */
     public ImageType getImage() {
         return image;
@@ -245,10 +219,8 @@ public class ChannelType {
 
     /**
      * Sets the value of the image property.
-     * 
      * @param image
      *            allowed object is {@link ImageType }
-     * 
      */
     public void setImage(ImageType image) {
         this.image = image;
@@ -256,9 +228,7 @@ public class ChannelType {
 
     /**
      * Gets the value of the copyright property.
-     * 
      * @return copyright is {@link String }
-     * 
      */
     public String getCopyright() {
         return copyright;
@@ -266,10 +236,8 @@ public class ChannelType {
 
     /**
      * Sets the value of the copyright property.
-     * 
      * @param copyright
      *            allowed object is {@link String }
-     * 
      */
     public void setCopyright(String copyright) {
         this.copyright = copyright;
@@ -277,25 +245,18 @@ public class ChannelType {
 
     /**
      * Gets the value of the item property.
-     * 
      * <p>
      * This accessor method returns a reference to the live list, not a
      * snapshot. Therefore any modification you make to the returned list will
      * be present inside the JAXB object. This is why there is not a
      * <CODE>set</CODE> method for the item property.
-     * 
      * <p>
      * For example, to add a new item, do as follows:
-     * 
      * <pre>
      * getItem().add(newItem);
      * </pre>
-     * 
-     * 
      * <p>
      * Objects of the following type(s) are allowed in the list {@link ItemType }
-     * 
-     * 
      */
     public ArrayList<ItemType> getItem() {
         if (item == null) {
@@ -306,9 +267,7 @@ public class ChannelType {
 
     /**
      * Gets the value of the summary property.
-     * 
      * @return itunesAuthor is {@link String }
-     * 
      */
     public String getItunesAuthor() {
         return itunesAuthor;
@@ -316,10 +275,8 @@ public class ChannelType {
 
     /**
      * Sets the value of the summary property.
-     * 
      * @param itunesAuthor
      *            allowed object is {@link String }
-     * 
      */
     public void setItunesAuthor(String itunesAuthor) {
         this.itunesAuthor = itunesAuthor;
@@ -327,7 +284,6 @@ public class ChannelType {
 
     /**
      * Gets the value of the itunesSubtitle property.
-     * 
      * @return itunesSubtitle is {@link String }
      */
     public String getItunesSubtitle() {
@@ -336,7 +292,6 @@ public class ChannelType {
 
     /**
      * Sets the value of the itunesSubtitle property.
-     * 
      * @param itunesSubtitle
      *            allowed object is {@link String }
      */
@@ -346,7 +301,6 @@ public class ChannelType {
 
     /**
      * Gets the value of the itunesSummary property.
-     * 
      * @return itunesSummary is {@link String }
      */
     public String getItunesSummary() {
@@ -354,9 +308,7 @@ public class ChannelType {
     }
 
     /**
-     * 
      * Sets the value of the itunesSummary property.
-     * 
      * @param itunesSummary
      *            allowed object is {@link String }
      */
@@ -366,7 +318,6 @@ public class ChannelType {
 
     /**
      * Gets the value of the itunesExplicit property.
-     * 
      * @return itunesExplicit is {@link String }
      */
     public String getItunesExplicit() {
@@ -375,7 +326,6 @@ public class ChannelType {
 
     /**
      * Sets the value of the itunesExplicit property.
-     * 
      * @param itunesExplicit
      *            allowed object is {@link String }
      */
@@ -385,7 +335,6 @@ public class ChannelType {
 
     /**
      * Gets the value of the itunesOwner property.
-     * 
      * @return itunesOwner is {@link ItunesOwnerType }
      */
     public ItunesOwnerType getItunesOwner() {
@@ -394,7 +343,6 @@ public class ChannelType {
 
     /**
      * Sets the value of the itunesOwner property.
-     * 
      * @param itunesOwner
      *            allowed object is {@link ItunesOwnerType }
      */
@@ -463,8 +411,6 @@ public class ChannelType {
     }
 
     /**
-     * 
-     * 
      * @return the ttl
      */
     public int getTtl() {

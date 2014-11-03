@@ -8,11 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>
  * Java class for imageType complex type.
- * 
  * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
  * <pre>
  * &lt;complexType name="imageType">
  *   &lt;complexContent>
@@ -26,8 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "imageType", propOrder = {"url", "title", "link"})
@@ -42,9 +38,7 @@ public class ImageType {
 
     /**
      * Gets the value of the url property.
-     * 
      * @return url is {@link String }
-     * 
      */
     public String getUrl() {
         return url;
@@ -52,10 +46,8 @@ public class ImageType {
 
     /**
      * Sets the value of the url property.
-     * 
      * @param url
      *            allowed object is {@link String }
-     * 
      */
     public void setUrl(String url) {
         this.url = url;
@@ -63,9 +55,7 @@ public class ImageType {
 
     /**
      * Gets the value of the title property.
-     * 
      * @return title is {@link String }
-     * 
      */
     public String getTitle() {
         return title;
@@ -73,10 +63,8 @@ public class ImageType {
 
     /**
      * Sets the value of the title property.
-     * 
      * @param title
      *            allowed object is {@link String }
-     * 
      */
     public void setTitle(String title) {
         this.title = title;
@@ -84,9 +72,7 @@ public class ImageType {
 
     /**
      * Gets the value of the link property.
-     * 
      * @return link is {@link String }
-     * 
      */
     public String getLink() {
         return link;
@@ -94,10 +80,8 @@ public class ImageType {
 
     /**
      * Sets the value of the link property.
-     * 
      * @param link
      *            allowed object is {@link String }
-     * 
      */
     public void setLink(String link) {
         this.link = link;

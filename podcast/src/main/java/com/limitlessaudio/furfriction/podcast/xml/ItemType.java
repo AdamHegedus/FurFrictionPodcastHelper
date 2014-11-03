@@ -11,11 +11,9 @@ import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
 /**
  * <p>
  * Java class for itemType complex type.
- * 
  * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
  * <pre>
  * &lt;complexType name="itemType">
  *   &lt;complexContent>
@@ -39,8 +37,6 @@ import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "itemType", propOrder = {"title", "link", "description", "guid", "enclosure", "pubDate", "author", "itunesAuthor", "itunesSubtitle",
@@ -83,9 +79,7 @@ public class ItemType {
 
     /**
      * Gets the value of the title property.
-     * 
      * @return title is {@link String }
-     * 
      */
     public String getTitle() {
         return title;
@@ -93,10 +87,8 @@ public class ItemType {
 
     /**
      * Sets the value of the title property.
-     * 
      * @param title
      *            allowed object is {@link String }
-     * 
      */
     public void setTitle(String title) {
         this.title = title;
@@ -104,9 +96,7 @@ public class ItemType {
 
     /**
      * Gets the value of the link property.
-     * 
      * @return link is {@link String }
-     * 
      */
     public String getLink() {
         return link;
@@ -114,10 +104,8 @@ public class ItemType {
 
     /**
      * Sets the value of the link property.
-     * 
      * @param link
      *            allowed object is {@link String }
-     * 
      */
     public void setLink(String link) {
         this.link = link;
@@ -125,9 +113,7 @@ public class ItemType {
 
     /**
      * Gets the value of the description property.
-     * 
      * @return description is {@link String }
-     * 
      */
     public String getDescription() {
         return description;
@@ -135,10 +121,8 @@ public class ItemType {
 
     /**
      * Sets the value of the description property.
-     * 
      * @param description
      *            allowed object is {@link String }
-     * 
      */
     public void setDescription(String description) {
         this.description = description;
