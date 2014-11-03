@@ -29,7 +29,7 @@ public class ItunesCategoryType {
     }
 
     /**The text attribute is representing the category of the item.
-     * Setter method accepts {@link String} as parameter
+     * Setter method accepts {@link String} as parameter.
      * @param text the text to set
      */
     public void setText(String text) {

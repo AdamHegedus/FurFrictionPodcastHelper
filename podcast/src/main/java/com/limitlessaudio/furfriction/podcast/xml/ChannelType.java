@@ -259,7 +259,7 @@ public class ChannelType {
      * Objects of the following type(s) are allowed in the list {@link ItemType }
      */
     public ArrayList<ItemType> getItem() {
-        if (item == null) {
+        if (item.isEmpty()) {
             item = new ArrayList<ItemType>();
         }
         return this.item;
@@ -425,16 +425,16 @@ public class ChannelType {
         this.ttl = ttl;
     }
 
-    /**
-     * Gets the value of the itunesCategory property.
-     * 
+    /**The &lt;itunes:category> tag points to the category of the podcast.
+     * Getter method returns {@link ItunesCategoryType} object.
      * @return the itunesCategory
      */
     public ItunesCategoryType getItunesCategory() {
         return itunesCategory;
     }
 
-    /**
+    /**The &lt;itunes:category> tag points to the category of the podcast.
+     * Setter method accepts {@link ItunesCategoryType} as parameter.
      * @param itunesCategory
      *            the itunesCategory to set
      */
@@ -442,18 +442,17 @@ public class ChannelType {
         this.itunesCategory = itunesCategory;
     }
 
-    /**
-     * Gets the value of the itunesImage property.
-     * 
+    /**The &lt;itunes:image> tag points to the artwork of the podcast.
+     * Getter method returns {@link ItunesImageType} object.
      * @return the itunesImage
      */
     public ItunesImageType getItunesImage() {
         return itunesImage;
     }
 
-    /**
-     * @param itunesImage
-     *            allowed object is {@link ItunesImageType }
+    /**The &lt;itunes:image> tag points to the artwork of the podcast.
+     * Setter method accepts {@link ItunesImageType} as parameter.
+     * @param itunesImage the itunesImage to set
      */
     public void setItunesImage(ItunesImageType itunesImage) {
         this.itunesImage = itunesImage;
