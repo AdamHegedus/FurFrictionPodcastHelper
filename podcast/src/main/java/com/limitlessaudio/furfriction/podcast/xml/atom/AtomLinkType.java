@@ -32,7 +32,7 @@ public class AtomLinkType {
     }
 
     /**The href attribute is representing the URI of the links.
-     * Setter method accepts {@link String} as parameter
+     * Setter method accepts {@link String} as parameter.
      * @param href
      *            the href to set
      */

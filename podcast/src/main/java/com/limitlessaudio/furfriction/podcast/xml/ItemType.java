@@ -11,9 +11,11 @@ import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
 /**
  * <p>
  * Java class for itemType complex type.
+ * </p>
  * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
+ * </p>
  * <pre>
  * &lt;complexType name="itemType">
  *   &lt;complexContent>
@@ -39,8 +41,10 @@ import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "itemType", propOrder = {"title", "link", "description", "guid", "enclosure", "pubDate", "author", "itunesAuthor", "itunesSubtitle",
-    "itunesSummary", "itunesCategory", "itunesDuration", "itunesImage", "itunesExplicit"})
+@XmlType(name = "itemType", propOrder = {"title", "link", "description",
+    "guid", "enclosure", "pubDate", "author", "itunesAuthor", "itunesSubtitle",
+    "itunesSummary", "itunesCategory", "itunesDuration", "itunesImage",
+    "itunesExplicit"})
 public class ItemType {
 
     // the required tags for the items
@@ -87,6 +91,7 @@ public class ItemType {
 
     /**
      * Sets the value of the title property.
+     * 
      * @param title
      *            allowed object is {@link String }
      */
@@ -96,6 +101,7 @@ public class ItemType {
 
     /**
      * Gets the value of the link property.
+     * 
      * @return link is {@link String }
      */
     public String getLink() {
@@ -104,6 +110,7 @@ public class ItemType {
 
     /**
      * Sets the value of the link property.
+     * 
      * @param link
      *            allowed object is {@link String }
      */
@@ -113,6 +120,7 @@ public class ItemType {
 
     /**
      * Gets the value of the description property.
+     * 
      * @return description is {@link String }
      */
     public String getDescription() {
@@ -121,6 +129,7 @@ public class ItemType {
 
     /**
      * Sets the value of the description property.
+     * 
      * @param description
      *            allowed object is {@link String }
      */
@@ -129,6 +138,16 @@ public class ItemType {
     }
 
     /**
+     * Every &lt;item> (episode) should have a permanent, case-sensitive GUID
+     * (Globally Unique Identifier). When you add episodes to your RSS podcast
+     * feed, GUIDs are compared in case-sensitive fashion to determine which
+     * episodes are new. If you don’t add the GUID for an episode, the episode
+     * URL will be used instead.
+     * 
+     * The GUID should be assigned to an episode only once and should never
+     * change. Assigning new GUIDs to existing episodes may cause issues with
+     * your podcast’s listing and chart placement in the iTunes Store.
+     * 
      * @return the guid
      */
     public String getGuid() {
