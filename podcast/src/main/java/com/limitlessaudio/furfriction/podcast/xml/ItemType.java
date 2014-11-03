@@ -16,6 +16,7 @@ import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
  * The following schema fragment specifies the expected content contained within
  * this class.
  * </p>
+ * 
  * <pre>
  * &lt;complexType name="itemType">
  *   &lt;complexContent>
@@ -91,9 +92,7 @@ public class ItemType {
 
     /**
      * Sets the value of the title property.
-     * 
-     * @param title
-     *            allowed object is {@link String }
+     * @param title allowed object is {@link String }
      */
     public void setTitle(String title) {
         this.title = title;
@@ -101,7 +100,6 @@ public class ItemType {
 
     /**
      * Gets the value of the link property.
-     * 
      * @return link is {@link String }
      */
     public String getLink() {
@@ -110,9 +108,7 @@ public class ItemType {
 
     /**
      * Sets the value of the link property.
-     * 
-     * @param link
-     *            allowed object is {@link String }
+     * @param link allowed object is {@link String }
      */
     public void setLink(String link) {
         this.link = link;
@@ -120,7 +116,6 @@ public class ItemType {
 
     /**
      * Gets the value of the description property.
-     * 
      * @return description is {@link String }
      */
     public String getDescription() {
@@ -129,9 +124,7 @@ public class ItemType {
 
     /**
      * Sets the value of the description property.
-     * 
-     * @param description
-     *            allowed object is {@link String }
+     * @param description allowed object is {@link String }
      */
     public void setDescription(String description) {
         this.description = description;
@@ -142,12 +135,10 @@ public class ItemType {
      * (Globally Unique Identifier). When you add episodes to your RSS podcast
      * feed, GUIDs are compared in case-sensitive fashion to determine which
      * episodes are new. If you don’t add the GUID for an episode, the episode
-     * URL will be used instead.
-     * 
-     * The GUID should be assigned to an episode only once and should never
-     * change. Assigning new GUIDs to existing episodes may cause issues with
-     * your podcast’s listing and chart placement in the iTunes Store.
-     * 
+     * URL will be used instead. The GUID should be assigned to an episode only
+     * once and should never change. Assigning new GUIDs to existing episodes
+     * may cause issues with your podcast’s listing and chart placement in the
+     * iTunes Store.
      * @return the guid
      */
     public String getGuid() {
@@ -155,8 +146,7 @@ public class ItemType {
     }
 
     /**
-     * @param guid
-     *            the guid to set
+     * @param guid the guid to set
      */
     public void setGuid(String guid) {
         this.guid = guid;
@@ -170,8 +160,7 @@ public class ItemType {
     }
 
     /**
-     * @param enclosure
-     *            the enclosure to set
+     * @param enclosure the enclosure to set
      */
     public void setEnclosure(EnclosureType enclosure) {
         this.enclosure = enclosure;
@@ -185,8 +174,7 @@ public class ItemType {
     }
 
     /**
-     * @param pubDate
-     *            the pubDate to set
+     * @param pubDate the pubDate to set
      */
     public void setPubDate(String pubDate) {
         this.pubDate = pubDate;
@@ -200,8 +188,7 @@ public class ItemType {
     }
 
     /**
-     * @param author
-     *            the author to set
+     * @param author the author to set
      */
     public void setAuthor(String author) {
         this.author = author;
@@ -215,8 +202,7 @@ public class ItemType {
     }
 
     /**
-     * @param itunesAuthor
-     *            the itunesAuthor to set
+     * @param itunesAuthor the itunesAuthor to set
      */
     public void setItunesAuthor(String itunesAuthor) {
         this.itunesAuthor = itunesAuthor;
@@ -230,8 +216,7 @@ public class ItemType {
     }
 
     /**
-     * @param itunesSubtitle
-     *            the itunesSubtitle to set
+     * @param itunesSubtitle the itunesSubtitle to set
      */
     public void setItunesSubtitle(String itunesSubtitle) {
         this.itunesSubtitle = itunesSubtitle;
@@ -245,8 +230,7 @@ public class ItemType {
     }
 
     /**
-     * @param itunesSummary
-     *            the itunesSummary to set
+     * @param itunesSummary the itunesSummary to set
      */
     public void setItunesSummary(String itunesSummary) {
         this.itunesSummary = itunesSummary;
@@ -260,8 +244,7 @@ public class ItemType {
     }
 
     /**
-     * @param itunesCategory
-     *            the itunesCategory to set
+     * @param itunesCategory the itunesCategory to set
      */
     public void setItunesCategory(ItunesCategoryType itunesCategory) {
         this.itunesCategory = itunesCategory;
@@ -275,8 +258,7 @@ public class ItemType {
     }
 
     /**
-     * @param itunesDuration
-     *            the itunesDuration to set
+     * @param itunesDuration the itunesDuration to set
      */
     public void setItunesDuration(String itunesDuration) {
         this.itunesDuration = itunesDuration;
@@ -290,8 +272,7 @@ public class ItemType {
     }
 
     /**
-     * @param itunesImage
-     *            the itunesImage to set
+     * @param itunesImage the itunesImage to set
      */
     public void setItunesImage(ItunesImageType itunesImage) {
         this.itunesImage = itunesImage;
@@ -305,8 +286,7 @@ public class ItemType {
     }
 
     /**
-     * @param itunesExplicit
-     *            the itunesExplicit to set
+     * @param itunesExplicit the itunesExplicit to set
      */
     public void setItunesExplicit(String itunesExplicit) {
         this.itunesExplicit = itunesExplicit;

@@ -7,10 +7,23 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>
- * Java class for imageType complex type.
+ * The &lt;image> tag points to the artwork of the podcast, via the URL
+ * specified in the &lt;a href> attribute.
+ * </p>
  * <p>
+ * Cover art must be in the JPEG or PNG file formats and in the RGB color space
+ * with a minimum size of 1400 x 1400 pixels and a maximum size of 2048 x 2048
+ * pixels. Note that these requirements are different from the standard RSS
+ * image tag specification.
+ * </p>
+ *
+ * <pre>
+ * &lt;image href="http://furfriction.com/image.jpg" />
+ * </pre>
+ *
  * The following schema fragment specifies the expected content contained within
  * this class.
+ *
  * <pre>
  * &lt;complexType name="imageType">
  *   &lt;complexContent>
@@ -37,7 +50,7 @@ public class ImageType {
     private String link;
 
     /**
-     * Gets the value of the url property.
+     * The url attribute is representing the URI of the image.
      * @return url is {@link String }
      */
     public String getUrl() {
@@ -45,16 +58,16 @@ public class ImageType {
     }
 
     /**
-     * Sets the value of the url property.
-     * @param url
-     *            allowed object is {@link String }
+     * The url attribute is representing the URI of the image.
+     * @param url allowed object is {@link String }
      */
     public void setUrl(String url) {
         this.url = url;
     }
 
     /**
-     * Gets the value of the title property.
+     * The title describes the image, it's used in the ALT attribute of the HTML
+     * &lt;img> tag when the channel is rendered in HTML.
      * @return title is {@link String }
      */
     public String getTitle() {
@@ -62,16 +75,18 @@ public class ImageType {
     }
 
     /**
-     * Sets the value of the title property.
-     * @param title
-     *            allowed object is {@link String }
+     * The title describes the image, it's used in the ALT attribute of the HTML
+     * &lt;img> tag when the channel is rendered in HTML.
+     * @param title allowed object is {@link String }
      */
     public void setTitle(String title) {
         this.title = title;
     }
 
     /**
-     * Gets the value of the link property.
+     * The link is the URL of the site, when the channel is rendered, the image
+     * is a link to the site. (In practice the image &lt;title> and &lt;link>
+     * should have the same value as the channel's &lt;title> and &lt;link>
      * @return link is {@link String }
      */
     public String getLink() {
@@ -79,9 +94,10 @@ public class ImageType {
     }
 
     /**
-     * Sets the value of the link property.
-     * @param link
-     *            allowed object is {@link String }
+     * The link is the URL of the site, when the channel is rendered, the image
+     * is a link to the site. (In practice the image &lt;title> and &lt;link>
+     * should have the same value as the channel's &lt;title> and &lt;link>
+     * @param link allowed object is {@link String }
      */
     public void setLink(String link) {
         this.link = link;
