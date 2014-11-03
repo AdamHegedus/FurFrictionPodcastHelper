@@ -10,7 +10,9 @@ import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
 
 /**
  * <p>
- * Java class for itemType complex type.
+ * The item property is the main content of the podcast, the feed can has
+ * multiple items. This Java class represents the "itemType" complex type in the
+ * XML file.
  * </p>
  * <p>
  * The following schema fragment specifies the expected content contained within
@@ -159,13 +161,17 @@ public class ItemType {
     }
 
     /**
-     * @return the enclosure
+     * The enclosure contains media data within an item. Getter method returns
+     * {@link EnclosureType} object.
+     * @return the enclosure is {@link EnclosureType}
      */
     public EnclosureType getEnclosure() {
         return enclosure;
     }
 
     /**
+     * The enclosure contains media data within an item. Setter method accepts
+     * {@link EnclosureType} as parameter.
      * @param enclosure the enclosure to set
      */
     public void setEnclosure(EnclosureType enclosure) {
@@ -303,13 +309,19 @@ public class ItemType {
     }
 
     /**
-     * @return the itunesExplicit
+     * The &lt;itunes:explicit> tag indicates whether the podcast episode
+     * contains explicit material. The two usable values for this tag are “yes”
+     * and “clean”.Getter method returns {@link String} object.
+     * @return the itunesExplicit is {@link String }
      */
     public String getItunesExplicit() {
         return itunesExplicit;
     }
 
     /**
+     * The &lt;itunes:explicit> tag indicates whether the podcast episode
+     * contains explicit material. The two usable values for this tag are “yes”
+     * and “clean”. Setter method accepts {@link String} as parameter.
      * @param itunesExplicit the itunesExplicit to set
      */
     public void setItunesExplicit(String itunesExplicit) {
