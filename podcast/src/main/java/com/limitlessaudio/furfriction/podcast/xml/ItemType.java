@@ -132,21 +132,27 @@ public class ItemType {
 
     /**
      * Every &lt;item> (episode) should have a permanent, case-sensitive GUID
-     * (Globally Unique Identifier). When you add episodes to your RSS podcast
+     * (Globally Unique Identifier). When adding episodes to the RSS podcast
      * feed, GUIDs are compared in case-sensitive fashion to determine which
-     * episodes are new. If you don’t add the GUID for an episode, the episode
-     * URL will be used instead. The GUID should be assigned to an episode only
-     * once and should never change. Assigning new GUIDs to existing episodes
-     * may cause issues with your podcast’s listing and chart placement in the
-     * iTunes Store.
-     * @return the guid
+     * episodes are new. If GUID is not present, the episode URL will be used
+     * instead. The GUID should be assigned to an episode only once and should
+     * never change. Assigning new GUIDs to existing episodes may cause issues
+     * with the podcast’s listing and chart placement in the iTunes Store.
+     * @return the guid is {@link String}
      */
     public String getGuid() {
         return guid;
     }
 
     /**
-     * @param guid the guid to set
+     * Every &lt;item> (episode) should have a permanent, case-sensitive GUID
+     * (Globally Unique Identifier). When adding episodes to the RSS podcast
+     * feed, GUIDs are compared in case-sensitive fashion to determine which
+     * episodes are new. If GUID is not present, the episode URL will be used
+     * instead. The GUID should be assigned to an episode only once and should
+     * never change. Assigning new GUIDs to existing episodes may cause issues
+     * with the podcast’s listing and chart placement in the iTunes Store.
+     * @param guid the guid to set, allowed object is {@link String }
      */
     public void setGuid(String guid) {
         this.guid = guid;
@@ -167,6 +173,15 @@ public class ItemType {
     }
 
     /**
+     * This tag specifies the date and time when an episode was released. The
+     * format for the content should be per RFC 2822, for example:
+     *
+     * <pre>
+     * Wed, 15
+     * Jun 2014 19:00:00 GMT
+     * </pre>
+     *
+     * Getter method returns {@link String} object.
      * @return the pubDate
      */
     public String getPubDate() {
@@ -174,6 +189,15 @@ public class ItemType {
     }
 
     /**
+     * This tag specifies the date and time when an episode was released. The
+     * format for the content should be per RFC 2822, for example:
+     *
+     * <pre>
+     * Wed, 15
+     * Jun 2014 19:00:00 GMT
+     * </pre>
+     *
+     * Setter method accepts {@link String} as parameter.
      * @param pubDate the pubDate to set
      */
     public void setPubDate(String pubDate) {

@@ -21,21 +21,35 @@ import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesOwnerType;
  * this class.
  *
  * <pre>
- * &lt;complexType name="channelType"> &lt;complexContent> &lt;restriction
- * base="{http://www.w3.org/2001/XMLSchema}anyType"> &lt;sequence> &lt;element
- * ref="{}docs"/> &lt;element ref="{}title"/> &lt;element ref="{}description"/>
- * &lt;element ref="{}link"/> &lt;element ref="{}language"/> &lt;element
- * ref="{}copyright"/> &lt;element ref="{}managingEditor"/> &lt;element
- * ref="{}webMaster"/> &lt;element ref="{}pubDate"/> &lt;element
- * ref="{}lastBuildDate"/> &lt;element ref="{}category"/> &lt;element
- * ref="{}ttl"/> &lt;element name="image" type="{}imageType"/> &lt;element
- * ref="{}itunes:author"/> &lt;element ref="{}itunes:subtitle"/> &lt;element
- * ref="{}itunes:summary"/> &lt;element name="itunes:category"
- * type="{}itunesCategoryType"/> &lt;element name="itunes:image"
- * type="{}itunesImageType"/> &lt;element ref="{}itunes:explicit"/> &lt;element
- * name="itunes:owner" type="{}itunesOwnerype"/> &lt;element name="item"
- * type="{}itemType" maxOccurs="unbounded"/> &lt;/sequence> &lt;/restriction>
- * &lt;/complexContent> &lt;/complexType>
+ * &lt;complexType name="channelType">
+ *  &lt;complexContent>
+ *      &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *          &lt;sequence>
+ *              &lt;element ref="{}docs"/>
+ *              &lt;element ref="{}title"/>
+ *              &lt;element ref="{}description"/>
+ *              &lt;element ref="{}link"/>
+ *              &lt;element ref="{}language"/>
+ *              &lt;element ref="{}copyright"/>
+ *              &lt;element ref="{}managingEditor"/>
+ *              &lt;element ref="{}webMaster"/>
+ *              &lt;element ref="{}pubDate"/>
+ *              &lt;element ref="{}lastBuildDate"/>
+ *              &lt;element ref="{}category"/>
+ *              &lt;element ref="{}ttl"/>
+ *              &lt;element name="image" type="{}imageType"/>
+ *              &lt;element ref="{}itunes:author"/>
+ *              &lt;element ref="{}itunes:subtitle"/>
+ *              &lt;element ref="{}itunes:summary"/>
+ *              &lt;element name="itunes:category" type="{}itunesCategoryType"/>
+ *              &lt;element name="itunes:image" type="{}itunesImageType"/>
+ *              &lt;element ref="{}itunes:explicit"/>
+ *              &lt;element name="itunes:owner" type="{}itunesOwnerype"/>
+ *              &lt;element name="item" type="{}itemType" maxOccurs="unbounded"/>
+ *          &lt;/sequence>
+ *      &lt;/restriction>
+ *  &lt;/complexContent>
+ * &lt;/complexType>
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -184,8 +198,8 @@ public class ChannelType {
     }
 
     /**
-     * This tag specifies the date and time when an episode was released. The
-     * format for the content should be per RFC 2822, for example:
+     * This tag specifies the date and time when the last episode was released.
+     * The format for the content should be per RFC 2822, for example:
      *
      * <pre>
      * Wed, 15
@@ -200,8 +214,8 @@ public class ChannelType {
     }
 
     /**
-     * This tag specifies the date and time when an episode was released. The
-     * format for the content should be per RFC 2822, for example:
+     * This tag specifies the date and time when the last episode was released.
+     * The format for the content should be per RFC 2822, for example:
      *
      * <pre>
      * Wed, 15
