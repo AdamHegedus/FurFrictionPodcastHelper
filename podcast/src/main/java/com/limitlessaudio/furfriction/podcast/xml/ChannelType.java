@@ -52,8 +52,6 @@ import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesOwnerType;
     "webMaster", "pubDate", "lastBuildDate", "category", "ttl", "image", "itunesAuthor", "itunesSubtitle", "itunesSummary", "itunesCategory",
     "itunesImage", "itunesExplicit", "itunesOwner", "item"})
 public class ChannelType {
-
-    // the required tags for the channel item
     @XmlElement(required = true, name = "link", namespace = "http://www.w3.org/2005/Atom")
     private AtomLinkType atomLink;
     @XmlElement(required = true)
@@ -64,8 +62,6 @@ public class ChannelType {
     private String link;
     @XmlElement(required = true)
     private List<ItemType> item;
-
-    // the optional tags for the channel item
     @XmlElement
     private String language;
     @XmlElement
@@ -86,8 +82,6 @@ public class ChannelType {
     private int ttl;
     @XmlElement
     private ImageType image;
-
-    // the iTunes specific tags for the channel item
     @XmlElement(required = true, name = "author", namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")
     private String itunesAuthor;
     @XmlElement(required = true, name = "subtitle", namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")
@@ -239,12 +233,10 @@ public class ChannelType {
      * <p>This accessor method returns a reference to the live list, not a
      * snapshot. Therefore any modification you make to the returned list will
      * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the item property.</p>
-     * For example, to add a new item, do as follows:
+     * <CODE>set</CODE> method for the item property. For example, to add a new item, do as follows:</p>
      * <pre>
      * getItem().add(newItem);
      * </pre>
-     * <p>
      * Objects of the following type(s) are allowed in the list {@link ItemType }
      * @return item
      */

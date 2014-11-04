@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.limitlessaudio.furfriction.podcast.util;
 
 import java.text.SimpleDateFormat;
@@ -23,7 +20,7 @@ public class DateConverterTest {
     }
 
     @Test
-    public void testConvertDateToRFC822ShouldReturn() {
+    public void testConvertDateToRFC2822ShouldReturn() {
         // GIVEN
         String expected = "Sun, 02 Nov 2014 12:45:00 +0100";
         Calendar calendar = Calendar.getInstance();
@@ -35,7 +32,7 @@ public class DateConverterTest {
     }
 
     @Test
-    public void testConvertDateToRFC822ShouldReturnA() {
+    public void testConvertDateToRFC2822ShouldReturnA() {
         // GIVEN
         String expected = "Sun, 02 Nov 2014 12:45:00 +0100";
         SimpleDateFormat dateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.US);
