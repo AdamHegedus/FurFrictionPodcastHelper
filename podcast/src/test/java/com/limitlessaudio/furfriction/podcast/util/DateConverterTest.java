@@ -1,9 +1,6 @@
 package com.limitlessaudio.furfriction.podcast.util;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Locale;
-import java.util.TimeZone;
 
 import junit.framework.Assert;
 
@@ -20,7 +17,7 @@ public class DateConverterTest {
     }
 
     @Test
-    public void testConvertDateToRFC2822ShouldReturn() {
+    public void testConvertDateToRFC2822ShouldReturnFormattedStringWhenDefaultTimeZoneGiven() {
         // GIVEN
         String expected = "Sun, 02 Nov 2014 12:45:00 +0100";
         Calendar calendar = Calendar.getInstance();
@@ -32,17 +29,12 @@ public class DateConverterTest {
     }
 
     @Test
-    public void testConvertDateToRFC2822ShouldReturnA() {
+    public void testConvertDateToRFC2822ShouldReturnEmptyStringWhenNullIsGiven() {
         // GIVEN
-        String expected = "Sun, 02 Nov 2014 12:45:00 +0100";
-        SimpleDateFormat dateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.US);
-        dateFormat.setTimeZone(TimeZone.getTimeZone("GMT +1"));
-        Calendar calendar = dateFormat.getCalendar();
-        calendar.set(2014, 10, 02, 11, 45, 00);
+        String expected = "";
         // WHEN
-        String actual = DateConverter.convertDateToRFC2822(calendar.getTime());
+        String actual = DateConverter.convertDateToRFC2822(null);
         // THEN
         Assert.assertEquals(expected, actual);
     }
-
 }

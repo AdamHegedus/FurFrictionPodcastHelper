@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <atom:link href="http://podcast.xml" rel="self" type="application/rss+xml"/>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <title>Fur Friction Podcast</title>
+        <description>Fur Friction monthly podcast</description>
+        <link>http://fur-friction.com/podcast/</link>
+        <language>en</language>
+        <copyright>Copyright 2014 Fur Friction</copyright>
+        <managingEditor>fox.fairplay@gmail.com (Fox Fairplay)</managingEditor>
+        <webMaster>adam.hegedus@limitless-audio.com  (Adam Hegedus)</webMaster>
+        <pubDate>Tue, 30 Sep 2014 20:00:00 +0200</pubDate>
+        <lastBuildDate>Tue, 30 Sep 2014 20:00:00 +0200</lastBuildDate>
+        <category>Music</category>
+        <ttl>720</ttl>
+        <image>
+            <url>http://fur-friction.com/image</url>
+            <title>Fur Friction</title>
+            <link>http://fur-friction.com/image</link>
+        </image>
+        <itunes:author>fox.fairplay@gmail.com (Fox Fairplay)</itunes:author>
+        <itunes:subtitle>Fur Friction Podcast</itunes:subtitle>
+        <itunes:summary>Fur Friction monthly podcast</itunes:summary>
+        <itunes:category text="Music"/>
+        <itunes:image href="http://fur-friction.com/image"/>
+        <itunes:explicit>No</itunes:explicit>
+        <itunes:owner>
+            <itunes:name>Fox Fairplay</itunes:name>
+            <itunes:email>fox.fairplay@gmail.com</itunes:email>
+        </itunes:owner>
+        <item>
+            <title>Furst Contact</title>
+            <link>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20001%20Fox%20Fairplay%20-%20Furst%20Contact.mp3</link>
+            <description>&quot;Anywhere in the world I could go to hear something like this in public? A bar, dance club, whatever, i don't care. It would just be nice to hear this somewhere other that the typical places, car and home. This is real slick mix for sure.&quot;</description>
+            <guid>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20001%20Fox%20Fairplay%20-%20Furst%20Contact.mp3</guid>
+            <enclosure url="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20001%20Fox%20Fairplay%20-%20Furst%20Contact.mp3" length="87895261" type="audio/mpeg"/>
+            <pubDate>Sun, 25 May 2014 20:00:00 +0200</pubDate>
+            <author>Fox Fairplay</author>
+            <itunes:author>Fox Fairplay</itunes:author>
+            <itunes:subtitle>FUR FRICTION 001</itunes:subtitle>
+            <itunes:summary>&quot;Anywhere in the world I could go to hear something like this in public? A bar, dance club, whatever, i don't care. It would just be nice to hear this somewhere other that the typical places, car and home. This is real slick mix for sure.&quot;</itunes:summary>
+            <itunes:duration>0:36:36</itunes:duration>
+            <itunes:image href="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20001.jpg"/>
+            <itunes:explicit>No</itunes:explicit>
+        </item>
+        <item>
+            <title>Chasing Mouse</title>
+            <link>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20002%20Kauna%20-%20Chasing%20Mouse.mp3</link>
+            <description>Kauna is a Hungarian producer who has several tracks released on the label Limitless Audio, which he also featured in this mix too. Some unreleased materials, collaborations and remixes with Addamz are also included in this package. Fresh and Warm mixture of his current favorites.</description>
+            <guid>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20002%20Kauna%20-%20Chasing%20Mouse.mp3</guid>
+            <enclosure url="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20002%20Kauna%20-%20Chasing%20Mouse.mp3" length="142737082" type="audio/mpeg"/>
+            <pubDate>Sun, 29 Jun 2014 20:00:00 +0200</pubDate>
+            <author>Kauna</author>
+            <itunes:author>Kauna</itunes:author>
+            <itunes:subtitle>FUR FRICTION 002</itunes:subtitle>
+            <itunes:summary>Kauna is a Hungarian producer who has several tracks released on the label Limitless Audio, which he also featured in this mix too. Some unreleased materials, collaborations and remixes with Addamz are also included in this package. Fresh and Warm mixture of his current favorites.</itunes:summary>
+            <itunes:duration>0:59:27</itunes:duration>
+            <itunes:image href="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20002.jpg"/>
+            <itunes:explicit>No</itunes:explicit>
+        </item>
+        <item>
+            <title>Fur Trade</title>
+            <link>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20003%20Fox%20Fairplay%20-%20Fur%20Trade.mp3</link>
+            <description>The Fox got his paws on some wax and mixed them in a solid style. He is so sly, even wants to trade some fur. Are you ready for some bargain? </description>
+            <guid>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20003%20Fox%20Fairplay%20-%20Fur%20Trade.mp3</guid>
+            <enclosure url="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20003%20Fox%20Fairplay%20-%20Fur%20Trade.mp3" length="0" type="audio/mpeg"/>
+            <pubDate>Sun, 26 Jul 2014 20:00:00 +0200</pubDate>
+            <author>Fox Fairplay</author>
+            <itunes:author>Fox Fairplay</itunes:author>
+            <itunes:subtitle>FUR FRICTION 003</itunes:subtitle>
+            <itunes:summary>The Fox got his paws on some wax and mixed them in a solid style. He is so sly, even wants to trade some fur. Are you ready for some bargain? </itunes:summary>
+            <itunes:duration>0</itunes:duration>
+            <itunes:image href="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20003.jpg"/>
+            <itunes:explicit>No</itunes:explicit>
+        </item>
+        <item>
+            <title>Eyes Reflect My Soul</title>
+            <link>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20004%20Fox%20Fairplay%20-%20Eyes%20Reflect%20My%20Soul.mp3</link>
+            <description>Foxes can be sly and shifty but they are solid and you can see the truth reflected in their eyes clearly.
+
+This mix tells a story and the track list also.
+A story which have the fox's blue eyes turn red.
+A story which have an open end...</description>
+            <guid>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20004%20Fox%20Fairplay%20-%20Eyes%20Reflect%20My%20Soul.mp3</guid>
+            <enclosure url="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20004%20Fox%20Fairplay%20-%20Eyes%20Reflect%20My%20Soul.mp3" length="0" type="audio/mpeg"/>
+            <pubDate>Sun, 31 Aug 2014 20:00:00 +0200</pubDate>
+            <author>Fox Fairplay</author>
+            <itunes:author>Fox Fairplay</itunes:author>
+            <itunes:subtitle>FUR FRICTION 004</itunes:subtitle>
+            <itunes:summary>Foxes can be sly and shifty but they are solid and you can see the truth reflected in their eyes clearly.
+
+This mix tells a story and the track list also.
+A story which have the fox's blue eyes turn red.
+A story which have an open end...</itunes:summary>
+            <itunes:duration>0</itunes:duration>
+            <itunes:image href="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20004.jpg"/>
+            <itunes:explicit>No</itunes:explicit>
+        </item>
+        <item>
+            <title>Fox And His Bunny</title>
+            <link>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20004%20Fox%20Fairplay%20-%20Fox%20And%20His%20Bunny.mp3</link>
+            <description>Foxes love to live their lively, exciting furry life, run after their prey, gophers, squirrels, bunnies and other rodents. But there is only one Bunny!</description>
+            <guid>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20004%20Fox%20Fairplay%20-%20Fox%20And%20His%20Bunny.mp3</guid>
+            <enclosure url="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20004%20Fox%20Fairplay%20-%20Fox%20And%20His%20Bunny.mp3" length="0" type="audio/mpeg"/>
+            <pubDate>Sun, 28 Sep 2014 20:00:00 +0200</pubDate>
+            <author>Fox Fairplay</author>
+            <itunes:author>Fox Fairplay</itunes:author>
+            <itunes:subtitle>FUR FRICTION 005</itunes:subtitle>
+            <itunes:summary>Foxes love to live their lively, exciting furry life, run after their prey, gophers, squirrels, bunnies and other rodents. But there is only one Bunny!</itunes:summary>
+            <itunes:duration>0</itunes:duration>
+            <itunes:image href="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20005.jpg"/>
+            <itunes:explicit>No</itunes:explicit>
+        </item>
+        <item>
+            <title>Big Fat Cat</title>
+            <link>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20006%20DSH%20-%20Big%20Fat%20Cat.mp3</link>
+            <description></description>
+            <guid>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20006%20DSH%20-%20Big%20Fat%20Cat.mp3</guid>
+            <enclosure url="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20006%20DSH%20-%20Big%20Fat%20Cat.mp3" length="0" type="audio/mpeg"/>
+            <pubDate>Sun, 26 Oct 2014 20:00:00 +0200</pubDate>
+            <author>DSH</author>
+            <itunes:author>DSH</itunes:author>
+            <itunes:subtitle>FUR FRICTION 006</itunes:subtitle>
+            <itunes:summary></itunes:summary>
+            <itunes:duration>0</itunes:duration>
+            <itunes:image href="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20006.jpg"/>
+            <itunes:explicit>No</itunes:explicit>
+        </item>
+        <item>
+            <title></title>
+            <link>http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20007%20Kauna%20-%20.mp3</link>
+            <description></description>
+            <guid></guid>
+            <enclosure url="" length="0" type="audio/mpeg"/>
+            <pubDate>Sun, 30 Nov 2014 20:00:00 +0200</pubDate>
+            <author>Kauna</author>
+            <itunes:author>Kauna</itunes:author>
+            <itunes:subtitle>FUR FRICTION 007</itunes:subtitle>
+            <itunes:summary></itunes:summary>
+            <itunes:duration>0</itunes:duration>
+            <itunes:image href="http://fur-friction.com/podcast/episodes/FUR%20FRICTION%20007.jpg"/>
+            <itunes:explicit>Yes</itunes:explicit>
+        </item>
+    </channel>
+</rss>

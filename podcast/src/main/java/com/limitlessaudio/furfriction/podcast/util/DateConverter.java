@@ -21,7 +21,9 @@ public final class DateConverter {
      */
     public static String convertDateToRFC2822(java.util.Date date) {
         String result = "";
-        result = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.US).format(date);
+        if (date != null) {
+            result = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.US).format(date);
+        }
         return result;
     }
 }
