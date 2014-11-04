@@ -4,7 +4,11 @@ package com.limitlessaudio.furfriction.podcast;
  * @author Adam_Hegedus
  *
  */
-public class PodcastHelper {
+public final class PodcastHelper {
+
+    private PodcastHelper() {
+
+    }
 
     /** The main entry point of the application.
      * @param args command line arguments

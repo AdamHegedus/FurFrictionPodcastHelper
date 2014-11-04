@@ -13,13 +13,8 @@ import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesCategoryType;
 import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
 import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesOwnerType;
 
-/**
- * <p>
- * Java class for channelType complex type.
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
- *
+/**<p>Root element of the podcast. The following schema fragment specifies the expected
+ * content contained within this class.</p>
  * <pre>
  * &lt;complexType name="channelType">
  *  &lt;complexContent>
@@ -53,10 +48,8 @@ import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesOwnerType;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "channelType", propOrder = {"atomLink", "docs", "title",
-    "description", "link", "language", "copyright", "managingEditor",
-    "webMaster", "pubDate", "lastBuildDate", "category", "ttl", "image",
-    "itunesAuthor", "itunesSubtitle", "itunesSummary", "itunesCategory",
+@XmlType(name = "channelType", propOrder = {"atomLink", "docs", "title", "description", "link", "language", "copyright", "managingEditor",
+    "webMaster", "pubDate", "lastBuildDate", "category", "ttl", "image", "itunesAuthor", "itunesSubtitle", "itunesSummary", "itunesCategory",
     "itunesImage", "itunesExplicit", "itunesOwner", "item"})
 public class ChannelType {
 
@@ -110,8 +103,7 @@ public class ChannelType {
     @XmlElement(required = true, name = "owner", namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")
     private ItunesOwnerType itunesOwner;
 
-    /**
-     * The atom:link element defines a relationship between a web resource (such
+    /**The &lt;atom:link> element defines a relationship between a web resource (such
      * as a page) and an RSS channel or item (optional).
      * @return atomLink is {@link AtomLinkType }
      */
@@ -119,8 +111,7 @@ public class ChannelType {
         return atomLink;
     }
 
-    /**
-     * The atom:link element defines a relationship between a web resource (such
+    /**The &lt;atom:link> element defines a relationship between a web resource (such
      * as a page) and an RSS channel or item (optional). Setter method accepts
      * {@link AtomLinkType} as parameter.
      * @param atomLink the atomLink to set
@@ -129,40 +120,35 @@ public class ChannelType {
         this.atomLink = atomLink;
     }
 
-    /**
-     * The name of the channel.
+    /**The name of the channel.
      * @return title is {@link String }
      */
     public String getTitle() {
         return title;
     }
 
-    /**
-     * The name of the channel.
+    /**The name of the channel.
      * @param title allowed object is {@link String }
      */
     public void setTitle(String title) {
         this.title = title;
     }
 
-    /**
-     * The URL to the HTML website corresponding to the channel.
+    /**The URL to the HTML website corresponding to the channel.
      * @return link is {@link String }
      */
     public String getLink() {
         return link;
     }
 
-    /**
-     * The URL to the HTML website corresponding to the channel.
+    /**The URL to the HTML website corresponding to the channel.
      * @param link allowed object is {@link String }
      */
     public void setLink(String link) {
         this.link = link;
     }
 
-    /**
-     * The language the channel is written in. Only values from the ISO 639 list
+    /**The language the channel is written in. Only values from the ISO 639 list
      * (two-letter language codes, with some possible modifiers, such as
      * “en-us") are supported.
      * @return language is {@link String }
@@ -171,8 +157,7 @@ public class ChannelType {
         return language;
     }
 
-    /**
-     * The language the channel is written in. Only values from the ISO 639 list
+    /**The language the channel is written in. Only values from the ISO 639 list
      * (two-letter language codes, with some possible modifiers, such as
      * “en-us") are supported.
      * @param language allowed object is {@link String }
@@ -181,31 +166,26 @@ public class ChannelType {
         this.language = language;
     }
 
-    /**
-     * Phrase or sentence describing the channel.
+    /**Phrase or sentence describing the channel.
      * @return description is {@link String }
      */
     public String getDescription() {
         return description;
     }
 
-    /**
-     * Phrase or sentence describing the channel.
+    /**Phrase or sentence describing the channel.
      * @param description allowed object is {@link String }
      */
     public void setDescription(String description) {
         this.description = description;
     }
 
-    /**
-     * This tag specifies the date and time when the last episode was released.
+    /**This tag specifies the date and time when the last episode was released.
      * The format for the content should be per RFC 2822, for example:
-     *
      * <pre>
      * Wed, 15
      * Jun 2014 19:00:00 GMT
      * </pre>
-     *
      * Getter method returns {@link String} object.
      * @return pubDate is {@link String }
      */
@@ -213,15 +193,12 @@ public class ChannelType {
         return pubDate;
     }
 
-    /**
-     * This tag specifies the date and time when the last episode was released.
+    /**This tag specifies the date and time when the last episode was released.
      * The format for the content should be per RFC 2822, for example:
-     *
      * <pre>
      * Wed, 15
      * Jun 2014 19:00:00 GMT
      * </pre>
-     *
      * Setter method accepts {@link String} as parameter.
      * @param pubDate the pubDate to set
      */
@@ -229,50 +206,41 @@ public class ChannelType {
         this.pubDate = pubDate;
     }
 
-    /**
-     * Gets the value of the image property.
+    /**Gets the value of the image property.
      * @return image is {@link ImageType }
      */
     public ImageType getImage() {
         return image;
     }
 
-    /**
-     * Sets the value of the image property.
+    /**Sets the value of the image property.
      * @param image allowed object is {@link ImageType }
      */
     public void setImage(ImageType image) {
         this.image = image;
     }
 
-    /**
-     * Copyright notice for content in the channel.
+    /**Copyright notice for content in the channel.
      * @return copyright is {@link String }
      */
     public String getCopyright() {
         return copyright;
     }
 
-    /**
-     * Copyright notice for content in the channel.
+    /**Copyright notice for content in the channel.
      * @param copyright allowed object is {@link String }
      */
     public void setCopyright(String copyright) {
         this.copyright = copyright;
     }
 
-    /**
-     * The item property is the main content of the podcast, the feed can has
+    /**The item property is the main content of the podcast, the feed can has
      * multiple items.
-     * <p>
-     * This accessor method returns a reference to the live list, not a
+     * <p>This accessor method returns a reference to the live list, not a
      * snapshot. Therefore any modification you make to the returned list will
      * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the item property.
-     * <p>
+     * <CODE>set</CODE> method for the item property.</p>
      * For example, to add a new item, do as follows:
-     * </p>
-     *
      * <pre>
      * getItem().add(newItem);
      * </pre>
@@ -287,13 +255,10 @@ public class ChannelType {
         return this.item;
     }
 
-    /**
-     * <p>
-     * The &lt;itunes:author> tag contains contact information for the editor of
+    /**<p>The &lt;itunes:author> tag contains contact information for the editor of
      * the podcast intended to be used for communication about the podcast's
      * content. If &lt;itunes:author> is not present at the RSS podcast feed
-     * level, iTunes will use the contents of &lt;managingEditor>.
-     * </p>
+     * level, iTunes will use the contents of &lt;managingEditor>.</p>
      * Getter method returns {@link String} object.
      * @return itunesAuthor is {@link String }
      */
@@ -301,13 +266,10 @@ public class ChannelType {
         return itunesAuthor;
     }
 
-    /**
-     * <p>
-     * The &lt;itunes:author> tag contains contact information for the editor of
+    /**<p>The &lt;itunes:author> tag contains contact information for the editor of
      * the podcast intended to be used for communication about the podcast's
      * content. If &lt;itunes:author> is not present at the RSS podcast feed
-     * level, iTunes will use the contents of &lt;managingEditor>.
-     * </p>
+     * level, iTunes will use the contents of &lt;managingEditor>.</p>
      * Setter method accepts {@link String} as parameter.
      * @param itunesAuthor the itunesAuthor to set
      */
@@ -315,11 +277,8 @@ public class ChannelType {
         this.itunesAuthor = itunesAuthor;
     }
 
-    /**
-     * <p>
-     * The contents of the &lt;itunes:subtitle> tag are displayed in the
-     * Description column in iTunes.
-     * </p>
+    /**<p>The contents of the &lt;itunes:subtitle> tag are displayed in the
+     * Description column in iTunes.</p>
      * Getter method returns {@link String} object.
      * @return itunesSubtitle is {@link String }
      */
@@ -327,11 +286,8 @@ public class ChannelType {
         return itunesSubtitle;
     }
 
-    /**
-     * <p>
-     * The contents of the &lt;itunes:subtitle> tag are displayed in the
-     * Description column in iTunes.
-     * </p>
+    /**<p>The contents of the &lt;itunes:subtitle> tag are displayed in the
+     * Description column in iTunes.</p>
      * Setter method accepts {@link String} as parameter.
      * @param itunesSubtitle the itunesSubtitle to set
      */
@@ -339,14 +295,11 @@ public class ChannelType {
         this.itunesSubtitle = itunesSubtitle;
     }
 
-    /**
-     * <p>
-     * The contents of the &lt;itunes:summary> tag are shown on the iTunes Store
+    /**<p>The contents of the &lt;itunes:summary> tag are shown on the iTunes Store
      * page for the podcast. The information also appears in a separate window
      * if the information (“i”) icon in the Description column is clicked. This
      * field can be up to 4000 characters. If a &lt;itunes:summary> tag is not
-     * included, the contents of the &lt;description> tag are used.
-     * </p>
+     * included, the contents of the &lt;description> tag are used.</p>
      * Getter method returns {@link String} object.
      * @return itunesSummary is {@link String }
      */
@@ -354,14 +307,11 @@ public class ChannelType {
         return itunesSummary;
     }
 
-    /**
-     * <p>
-     * The contents of the &lt;itunes:summary> tag are shown on the iTunes Store
+    /**<p>The contents of the &lt;itunes:summary> tag are shown on the iTunes Store
      * page for the podcast. The information also appears in a separate window
      * if the information (“i”) icon in the Description column is clicked. This
      * field can be up to 4000 characters. If a &lt;itunes:summary> tag is not
-     * included, the contents of the &lt;description> tag are used.
-     * </p>
+     * included, the contents of the &lt;description> tag are used.</p>
      * Setter method accepts {@link String} as parameter.
      * @param itunesSummary the itunesSummary to set
      */
@@ -369,23 +319,16 @@ public class ChannelType {
         this.itunesSummary = itunesSummary;
     }
 
-    /**
-     * The &lt;itunes:explicit> tag indicates whether the podcast contains
+    /**The &lt;itunes:explicit> tag indicates whether the podcast contains
      * explicit material. The two usable values for this tag are “yes” and
      * “clean”.
-     * <p>
-     * The value “yes” indicates the presence of explicit content, therefore in
-     * iTunes an “explicit” parental advisory graphic will appear.
-     * </p>
-     * <p>
-     * The value “clean” indicates that none of the podcast episodes contain
+     * <p>The value “yes” indicates the presence of explicit content, therefore in
+     * iTunes an “explicit” parental advisory graphic will appear.</p>
+     * <p>The value “clean” indicates that none of the podcast episodes contain
      * explicit language or adult content, in iTunes a “clean” parental advisory
-     * graphic will appear.
-     * </p>
-     * <p>
-     * Any other value besides “yes” or “clean” results in neither of the
-     * parental advisory graphics will appear and that space will remain blank.
-     * </p>
+     * graphic will appear.</p>
+     * <p>Any other value besides “yes” or “clean” results in neither of the
+     * parental advisory graphics will appear and that space will remain blank.</p>
      * Getter method returns {@link String} object.
      * @return itunesExplicit is {@link String }
      */
@@ -393,23 +336,16 @@ public class ChannelType {
         return itunesExplicit;
     }
 
-    /**
-     * The &lt;itunes:explicit> tag indicates whether the podcast contains
+    /**The &lt;itunes:explicit> tag indicates whether the podcast contains
      * explicit material. The two usable values for this tag are “yes” and
      * “clean”.
-     * <p>
-     * The value “yes” indicates the presence of explicit content, therefore in
-     * iTunes an “explicit” parental advisory graphic will appear.
-     * </p>
-     * <p>
-     * The value “clean” indicates that none of the podcast episodes contain
+     * <p>The value “yes” indicates the presence of explicit content, therefore in
+     * iTunes an “explicit” parental advisory graphic will appear.</p>
+     * <p>The value “clean” indicates that none of the podcast episodes contain
      * explicit language or adult content, in iTunes a “clean” parental advisory
-     * graphic will appear.
-     * </p>
-     * <p>
-     * Any other value besides “yes” or “clean” results in neither of the
-     * parental advisory graphics will appear and that space will remain blank.
-     * </p>
+     * graphic will appear.</p>
+     * <p>Any other value besides “yes” or “clean” results in neither of the
+     * parental advisory graphics will appear and that space will remain blank.</p>
      * Setter method accepts {@link String} as parameter.
      * @param itunesExplicit the itunesExplicit to set
      */
@@ -417,75 +353,72 @@ public class ChannelType {
         this.itunesExplicit = itunesExplicit;
     }
 
-    /**
-     * The &lt;itunes:owner> tag contains contact information for the owner of
+    /**The &lt;itunes:owner> tag contains contact information for the owner of
      * the podcast intended to be used for administrative communication about
-     * the podcast. Getter method returns {@link ItunesOwnerType} object.
+     * the podcast.
+     * Getter method returns {@link ItunesOwnerType} object.
      * @return itunesOwner is {@link ItunesOwnerType }
      */
     public ItunesOwnerType getItunesOwner() {
         return itunesOwner;
     }
 
-    /**
-     * The &lt;itunes:owner> tag contains contact information for the owner of
+    /**The &lt;itunes:owner> tag contains contact information for the owner of
      * the podcast intended to be used for administrative communication about
-     * the podcast. Setter method accepts {@link ItunesOwnerType} as parameter.
+     * the podcast.
+     * Setter method accepts {@link ItunesOwnerType} as parameter.
      * @param itunesOwner the itunesOwner to set.
      */
     public void setItunesOwner(ItunesOwnerType itunesOwner) {
         this.itunesOwner = itunesOwner;
     }
 
-    /**
-     * The &lt;managindEditor> tag contains contact information for the editor
+    /**The &lt;managindEditor> tag contains contact information for the editor
      * of the podcast intended to be used for communication about the podcast's
-     * content. Getter method returns {@link String} object.
+     * content.
+     * Getter method returns {@link String} object.
      * @return the managingEditor
      */
     public String getManagingEditor() {
         return managingEditor;
     }
 
-    /**
-     * The &lt;managindEditor> tag contains contact information for the editor
+    /**The &lt;managindEditor> tag contains contact information for the editor
      * of the podcast intended to be used for communication about the podcast's
-     * content. Setter method accepts {@link String} as parameter.
+     * content.
+     * Setter method accepts {@link String} as parameter.
      * @param managingEditor the managingEditor to set
      */
     public void setManagingEditor(String managingEditor) {
         this.managingEditor = managingEditor;
     }
 
-    /**
-     * The &lt;webMaster> tag contains contact information for the owner of the
+    /**The &lt;webMaster> tag contains contact information for the owner of the
      * podcast intended to be used for administrative communication about the
-     * podcast. Getter method returns {@link String} object.
+     * podcast.
+     * Getter method returns {@link String} object.
      * @return the webMaster
      */
     public String getWebMaster() {
         return webMaster;
     }
 
-    /**
-     * The &lt;webMaster> tag contains contact information for the owner of the
+    /**The &lt;webMaster> tag contains contact information for the owner of the
      * podcast intended to be used for administrative communication about the
-     * podcast. Setter method accepts {@link String} as parameter.
+     * podcast.
+     * Setter method accepts {@link String} as parameter.
      * @param webMaster the webMaster to set
      */
     public void setWebMaster(String webMaster) {
         this.webMaster = webMaster;
     }
 
-    /**
-     * This tag specifies the date and time when the podcast xml file was last
+    /**This tag specifies the date and time when the podcast xml file was last
      * changed. The format for the content should be per RFC 2822, for example:
-     *
      * <pre>
      * Wed, 15
      * Jun 2014 19:00:00 GMT
      * </pre>
-     *
      * Getter method returns {@link String} object.
      * @return the lastBuildDate
      */
@@ -493,15 +426,12 @@ public class ChannelType {
         return lastBuildDate;
     }
 
-    /**
-     * This tag specifies the date and time when the podcast xml file was last
+    /**This tag specifies the date and time when the podcast xml file was last
      * changed. The format for the content should be per RFC 2822, for example:
-     *
      * <pre>
      * Wed, 15
      * Jun 2014 19:00:00 GMT
      * </pre>
-     *
      * Setter method accepts {@link String} as parameter.
      * @param lastBuildDate the lastBuildDate to set
      */
@@ -509,8 +439,7 @@ public class ChannelType {
         this.lastBuildDate = lastBuildDate;
     }
 
-    /**
-     * Specify one or more categories that the channel belongs to. Different
+    /**Specify one or more categories that the channel belongs to. Different
      * from RSS 2.0 specification. Getter method returns {@link String} object.
      * @return the category
      */
@@ -518,8 +447,7 @@ public class ChannelType {
         return category;
     }
 
-    /**
-     * Specify one or more categories that the channel belongs to. Different
+    /**Specify one or more categories that the channel belongs to. Different
      * from RSS 2.0 specification. Setter method accepts {@link String} as
      * parameter.
      * @param category the category to set
@@ -528,8 +456,7 @@ public class ChannelType {
         this.category = category;
     }
 
-    /**
-     * The ttl stands for time to live. It's a number of minutes that indicates
+    /**The ttl stands for time to live. It's a number of minutes that indicates
      * how long a channel can be cached before refreshing from the source.
      * Getter method returns {@link Integer} object.
      * @return the ttl
@@ -538,8 +465,7 @@ public class ChannelType {
         return ttl;
     }
 
-    /**
-     * The ttl stands for time to live. It's a number of minutes that indicates
+    /**The ttl stands for time to live. It's a number of minutes that indicates
      * how long a channel can be cached before refreshing from the source.
      * Setter method accepts {@link Integer} as parameter.
      * @param ttl the ttl to set
@@ -548,8 +474,7 @@ public class ChannelType {
         this.ttl = ttl;
     }
 
-    /**
-     * The &lt;itunes:category> tag points to the category of the podcast.
+    /**The &lt;itunes:category> tag points to the category of the podcast.
      * Getter method returns {@link ItunesCategoryType} object.
      * @return the itunesCategory
      */
@@ -557,8 +482,7 @@ public class ChannelType {
         return itunesCategory;
     }
 
-    /**
-     * The &lt;itunes:category> tag points to the category of the podcast.
+    /**The &lt;itunes:category> tag points to the category of the podcast.
      * Setter method accepts {@link ItunesCategoryType} as parameter.
      * @param itunesCategory the itunesCategory to set
      */
@@ -566,8 +490,7 @@ public class ChannelType {
         this.itunesCategory = itunesCategory;
     }
 
-    /**
-     * The &lt;itunes:image> tag points to the artwork of the podcast. Getter
+    /**The &lt;itunes:image> tag points to the artwork of the podcast. Getter
      * method returns {@link ItunesImageType} object.
      * @return the itunesImage
      */
@@ -575,8 +498,7 @@ public class ChannelType {
         return itunesImage;
     }
 
-    /**
-     * The &lt;itunes:image> tag points to the artwork of the podcast. Setter
+    /**The &lt;itunes:image> tag points to the artwork of the podcast. Setter
      * method accepts {@link ItunesImageType} as parameter.
      * @param itunesImage the itunesImage to set
      */
