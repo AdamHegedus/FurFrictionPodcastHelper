@@ -142,5 +142,9 @@ A story which have an open end...</itunes:summary>
             <itunes:image href="http://furfriction.com/podcast/episodes/FUR%20FRICTION%20007.jpg"/>
             <itunes:explicit>Yes</itunes:explicit>
         </item>
+        <item>
+            <author>Addamz</author>
+            <itunes:author>Addamz</itunes:author>
+        </item>
     </channel>
 </rss>

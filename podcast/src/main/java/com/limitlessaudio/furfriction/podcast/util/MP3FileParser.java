@@ -1,10 +1,12 @@
 package com.limitlessaudio.furfriction.podcast.util;
 
 import java.io.IOException;
+import java.io.RandomAccessFile;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.mpatric.mp3agic.ID3v1;
 import com.mpatric.mp3agic.ID3v2;
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.Mp3File;
@@ -41,11 +43,33 @@ public final class MP3FileParser {
         }
     }
 
+    public static String parseArtist(final String filename) throws UnsupportedTagException, InvalidDataException, IOException {
+        String artist = "";
+        Mp3File mp3File = new Mp3File(filename);
+        logger.debug("Trying to extract the Artist field from file: " + mp3File.getFilename());
+        if (mp3File.hasId3v1Tag()) {
+            ID3v1 id3v1 = mp3File.getId3v1Tag();
+        }
+        if (mp3File.hasId3v2Tag()) {
+            ID3v2 id3v2 = mp3File.getId3v2Tag();
+            artist = getArtist(id3v2);
+            logger.debug("Artist field parsed: " + artist);
+        }
+
+        return artist;
+    }
+
+    private static String getArtist(final ID3v2 id3) {
+        String artist = "";
+        artist = id3.getArtist();
+        return artist;
+    }
+
     private static void parseID3v1(Mp3File mp3file) {
         logger.debug(mp3file.getFilename() + " has ID3v1 tag");
     }
 
-    private static void parseID3v2(Mp3File mp3file) {
+    private static void parseID3v2(Mp3File mp3file) throws IOException {
         logger.debug(mp3file.getFilename() + " has ID3v2 tag");
         ID3v2 id3v2 = mp3file.getId3v2Tag();
 
@@ -70,5 +94,37 @@ public final class MP3FileParser {
         logger.debug(mp3file.getFilename() + " Version: " + id3v2.getVersion());
         logger.debug(mp3file.getFilename() + " Year: " + id3v2.getYear());
 
+        byte[] albumImageData = id3v2.getAlbumImage();
+        if (albumImageData != null) {
+            logger.debug(mp3file.getFilename() + "Album image data length: " + albumImageData.length + " bytes");
+            logger.debug(mp3file.getFilename() + "Album image mime type: " + id3v2.getAlbumImageMimeType());
+
+            String mimeType = id3v2.getAlbumImageMimeType();
+            String albumImageFilename = parseDirectoryFromFilename(mp3file.getFilename()) + "/" + id3v2.getAlbum() + "."
+                    + parseFileExtensionFromMimeType(mimeType);
+            RandomAccessFile file = new RandomAccessFile(albumImageFilename, "rw");
+            file.write(albumImageData);
+            file.close();
+            logger.debug("Album image from " + mp3file.getFilename() + " has written into file: " + albumImageFilename);
+        }
+    }
+
+    private static String parseFileExtensionFromMimeType(String mimeType) {
+        String extension = "unknown";
+        int index = mimeType.indexOf('/');
+        if (index > 0) {
+            extension = mimeType.substring(index + 1).toLowerCase();
+        } else {
+            extension = mimeType.toLowerCase();
+        }
+
+        return extension;
+    }
+
+    private static String parseDirectoryFromFilename(String filename) {
+        String directory = "";
+        int index = filename.lastIndexOf("/");
+        directory = filename.substring(0, index);
+        return directory;
     }
 }
