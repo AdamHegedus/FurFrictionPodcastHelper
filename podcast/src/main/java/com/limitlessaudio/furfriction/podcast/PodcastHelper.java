@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Date;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -14,6 +15,7 @@ import javax.xml.bind.Unmarshaller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.limitlessaudio.furfriction.podcast.util.DateConverter;
 import com.limitlessaudio.furfriction.podcast.util.MP3FileParser;
 import com.limitlessaudio.furfriction.podcast.xml.ItemType;
 import com.limitlessaudio.furfriction.podcast.xml.Rss;
@@ -79,6 +81,8 @@ public final class PodcastHelper {
                 author = MP3FileParser.parseArtist(TEST_FILE);
                 newItem.setAuthor(author);
                 newItem.setItunesAuthor(author);
+                newItem.setItunesExplicit("clean");
+                newItem.setPubDate(DateConverter.convertDateToRFC2822(new Date()));
 
                 rss.getChannel().getItem().add(newItem);
             } catch (UnsupportedTagException e) {
@@ -95,7 +99,7 @@ public final class PodcastHelper {
             Marshaller marshaller = ctx.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             OutputStream outputXml = new FileOutputStream("resources/output.xml");
-
+            rss.getChannel().setLastBuildDate(DateConverter.convertDateToRFC2822(new Date()));
             marshaller.marshal(rss, outputXml);
         } catch (JAXBException e) {
             // TODO Auto-generated catch block
