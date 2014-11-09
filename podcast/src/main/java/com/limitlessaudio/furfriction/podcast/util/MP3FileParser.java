@@ -1,11 +1,19 @@
 package com.limitlessaudio.furfriction.podcast.util;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.Date;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.limitlessaudio.furfriction.podcast.xml.EnclosureType;
+import com.limitlessaudio.furfriction.podcast.xml.ItemType;
+import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesCategoryType;
+import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
 import com.mpatric.mp3agic.ID3v1;
 import com.mpatric.mp3agic.ID3v2;
 import com.mpatric.mp3agic.InvalidDataException;
@@ -22,6 +30,95 @@ public final class MP3FileParser {
 
     }
 
+    
+    public static ItemType getItemSkeletonFromAudioFile(final String filename) throws UnsupportedTagException, InvalidDataException, IOException{
+        Mp3File file = new Mp3File(filename);
+        ItemType item = new ItemType();
+        ID3v2 id3 = getID3v2(file);
+        item.setAuthor(id3.getArtist());
+        item.setItunesSummary(id3.getComment());
+        item.setItunesAuthor(id3.getArtist());
+        item.setPubDate(DateConverter.convertDateToRFC2822(new Date()));
+        
+        ItunesCategoryType itunesCategory = new ItunesCategoryType();
+        itunesCategory.setText("Music");
+        item.setItunesCategory(itunesCategory);
+        item.setItunesExplicit("Clean");
+        item.setTitle(id3.getTitle());
+        
+        String description = id3.getAlbum().toUpperCase() + " 00" + id3.getTrack();
+        item.setDescription(description);
+        item.setItunesSubtitle(description);
+        
+        String duration = file.getLengthInSeconds() + "";
+        logger.debug(filename + " Duration before : " + duration);
+        duration = getDuration((int)file.getLengthInSeconds());
+        item.setItunesDuration(duration);
+        logger.debug(filename + " Duration after : " + duration);
+        
+        String guid = id3.getAlbum().toUpperCase() + " 00" + id3.getTrack() + " " + id3.getArtist() + " - " + id3.getTitle() + ".mp3";
+        item.setGuid("http://furfriction.com/podcast/episodes/" + encodeURI(guid));
+        item.setLink("http://furfriction.com/podcast/episodes/" + encodeURI(guid));
+        
+        EnclosureType enclosure = new EnclosureType();
+        enclosure.setType("audio/mpeg");
+        enclosure.setUrl("http://furfriction.com/podcast/episodes/" + encodeURI(guid));
+        enclosure.setLength((int)file.getLength());
+        item.setEnclosure(enclosure);
+        ItunesImageType itunesImage = new ItunesImageType();
+        String href = id3.getAlbum().toUpperCase() + " 00" + id3.getTrack() + ".jpg";
+        itunesImage.setHref("http://furfriction.com/podcast/episodes/" + encodeURI(href));
+        item.setItunesImage(itunesImage);
+        
+        
+        return item;
+    }
+
+    
+    
+    public static ID3v2 getID3v2(final Mp3File file) throws UnsupportedTagException{
+        ID3v2 id3 = null;
+        if (file.hasId3v2Tag()){
+            id3 = file.getId3v2Tag();
+        } else {
+            throw new UnsupportedTagException(file.toString()+ " doesn't contain any ID3v2 tags");
+        }
+        
+        return id3;
+    }
+    
+    public static String encodeURI(String s) {
+        String result;
+
+        try {
+            result = URLEncoder.encode(s, "UTF-8")
+                    .replaceAll("\\+", "%20")
+                    .replaceAll("\\%21", "!")
+                    .replaceAll("\\%27", "'")
+                    .replaceAll("\\%28", "(")
+                    .replaceAll("\\%29", ")")
+                    .replaceAll("\\%7E", "~");
+        } catch (UnsupportedEncodingException e) {
+            result = s;
+        }
+
+        return result;
+    }
+    
+    public static String getDuration(int duration) {
+        
+        String result = "";
+        
+        int h = (int)(duration/3600);
+        result += h+":";
+        int m = (int)(duration -(h*3600))/60;
+        result += (m<10)?"0"+m+":":m+":";
+        int s = (int)(duration -(h*3600)-(m*60));
+        result += (s<10)?"0"+s:s;
+        
+        return result;
+    }
+    
     /**Example method for getting data from mp3file and logging it.
      * @param filename the filename to get data from, accepted parameter is {@link String}
      * @throws UnsupportedTagException declared later

@@ -11,7 +11,7 @@
         <managingEditor>fox.fairplay@gmail.com (Fox Fairplay)</managingEditor>
         <webMaster>adam.hegedus@limitless-audio.com  (Adam Hegedus)</webMaster>
         <pubDate>Tue, 30 Sep 2014 20:00:00 +0200</pubDate>
-        <lastBuildDate>Thu, 06 Nov 2014 18:31:43 +0100</lastBuildDate>
+        <lastBuildDate>Mon, 10 Nov 2014 00:31:33 +0100</lastBuildDate>
         <category>Music</category>
         <ttl>720</ttl>
         <image>
@@ -143,10 +143,20 @@ A story which have an open end...</itunes:summary>
             <itunes:explicit>Yes</itunes:explicit>
         </item>
         <item>
-            <pubDate>Thu, 06 Nov 2014 18:31:43 +0100</pubDate>
-            <author>Addamz</author>
-            <itunes:author>Addamz</itunes:author>
-            <itunes:explicit>clean</itunes:explicit>
+            <title>Big Fat Cat</title>
+            <link>http://furfriction.com/podcast/episodes/FUR%20FRICTION%20006%20DSH%20-%20Big%20Fat%20Cat.mp3</link>
+            <description>FUR FRICTION 006</description>
+            <guid>http://furfriction.com/podcast/episodes/FUR%20FRICTION%20006%20DSH%20-%20Big%20Fat%20Cat.mp3</guid>
+            <enclosure url="http://furfriction.com/podcast/episodes/FUR%20FRICTION%20006%20DSH%20-%20Big%20Fat%20Cat.mp3" length="146379414" type="audio/mpeg"/>
+            <pubDate>Mon, 10 Nov 2014 00:31:33 +0100</pubDate>
+            <author>DSH</author>
+            <itunes:author>DSH</itunes:author>
+            <itunes:subtitle>FUR FRICTION 006</itunes:subtitle>
+            <itunes:summary>320kbps</itunes:summary>
+            <itunes:category text="Music"/>
+            <itunes:duration>1:00:58</itunes:duration>
+            <itunes:image href="http://furfriction.com/podcast/episodes/FUR%20FRICTION%20006.jpg"/>
+            <itunes:explicit>Clean</itunes:explicit>
         </item>
     </channel>
 </rss>

@@ -19,6 +19,10 @@ import javax.xml.bind.annotation.XmlType;
 public class ItunesCategoryType {
     @XmlAttribute(name = "text", required = true)
     private String text;
+    
+    public ItunesCategoryType() {
+        this.text = "Music";
+    }
 
     /**The text attribute is representing the category of the item.
      * Getter method returns {@link String} object.
