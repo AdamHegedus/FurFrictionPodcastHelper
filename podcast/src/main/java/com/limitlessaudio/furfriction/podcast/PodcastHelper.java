@@ -77,10 +77,10 @@ public final class PodcastHelper {
              * <itunes:explicit>Clean</itunes:explicit>
              */
             ItemType newItem = new ItemType();
-            
-            String author;
+
+//            String author;
             try {
-                  newItem = MP3FileParser.getItemSkeletonFromAudioFile(TEST_FILE);
+                newItem = MP3FileParser.getItemSkeletonFromAudioFile(TEST_FILE);
 //                author = MP3FileParser.parseArtist(TEST_FILE);
 //                newItem.setAuthor(author);
 //                newItem.setItunesAuthor(author);
