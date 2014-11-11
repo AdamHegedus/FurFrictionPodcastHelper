@@ -24,9 +24,9 @@ import com.mpatric.mp3agic.UnsupportedTagException;
 public final class MP3FileParser {
 
     private static Logger logger = LoggerFactory.getLogger(MP3FileParser.class);
-    private final static int SECONDS_IN_HOUR = Integer.valueOf(3600);
-    private final static int MINUTES_IN_HOUR = Integer.valueOf(60);
-    private final static int ONE_DIGIT_NUMBER = Integer.valueOf(10);
+    private static final int SECONDS_IN_HOUR = Integer.valueOf(3600);
+    private static final int MINUTES_IN_HOUR = Integer.valueOf(60);
+    private static final int ONE_DIGIT_NUMBER = Integer.valueOf(10);
 
     private MP3FileParser() {
 
@@ -85,14 +85,18 @@ public final class MP3FileParser {
         return id3;
     }
 
-    public static String encodeURI(String s) {
+    /**Reads input text and returns URI encoded {@link String}.
+     * @param textToEncodeAsUri is {@link String}
+     * @return result is {@link String}
+     */
+    public static String encodeURI(String textToEncodeAsUri) {
         String result;
 
         try {
-            result = URLEncoder.encode(s, "UTF-8").replaceAll("\\+", "%20").replaceAll("\\%21", "!").replaceAll("\\%27", "'")
+            result = URLEncoder.encode(textToEncodeAsUri, "UTF-8").replaceAll("\\+", "%20").replaceAll("\\%21", "!").replaceAll("\\%27", "'")
                     .replaceAll("\\%28", "(").replaceAll("\\%29", ")").replaceAll("\\%7E", "~");
         } catch (UnsupportedEncodingException e) {
-            result = s;
+            result = textToEncodeAsUri;
         }
 
         return result;

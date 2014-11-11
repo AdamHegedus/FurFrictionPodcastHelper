@@ -29,8 +29,8 @@ import com.mpatric.mp3agic.UnsupportedTagException;
 public final class PodcastHelper {
 
     private static Logger logger = LoggerFactory.getLogger(PodcastHelper.class);
-    //private final static String TEST_FILE = "d:/data/EPC001.mp3";
-    private final static String TEST_FILE = "d:/FUR FRICTION Podcast/FUR FRICTION 006 DSH - Big Fat Cat.mp3";
+    //private static final String TEST_FILE = "d:/data/EPC001.mp3";
+    private static final String TEST_FILE = "d:/FUR FRICTION Podcast/FUR FRICTION 006 DSH - Big Fat Cat.mp3";
 
     private PodcastHelper() {
 
@@ -78,14 +78,14 @@ public final class PodcastHelper {
              */
             ItemType newItem = new ItemType();
 
-//            String author;
+            //            String author;
             try {
                 newItem = MP3FileParser.getItemSkeletonFromAudioFile(TEST_FILE);
-//                author = MP3FileParser.parseArtist(TEST_FILE);
-//                newItem.setAuthor(author);
-//                newItem.setItunesAuthor(author);
-//                newItem.setItunesExplicit("clean");
-//                newItem.setPubDate(DateConverter.convertDateToRFC2822(new Date()));
+                //                author = MP3FileParser.parseArtist(TEST_FILE);
+                //                newItem.setAuthor(author);
+                //                newItem.setItunesAuthor(author);
+                //                newItem.setItunesExplicit("clean");
+                //                newItem.setPubDate(DateConverter.convertDateToRFC2822(new Date()));
 
                 rss.getChannel().getItem().add(newItem);
             } catch (UnsupportedTagException e) {

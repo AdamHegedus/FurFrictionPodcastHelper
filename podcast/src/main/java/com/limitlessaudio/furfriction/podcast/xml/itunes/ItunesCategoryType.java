@@ -20,6 +20,19 @@ public class ItunesCategoryType {
     @XmlAttribute(name = "text", required = true)
     private String text;
 
+    /**Constructor sets category by given parameter.
+     * @param text is {@link String}
+     */
+    public ItunesCategoryType(final String text) {
+        this.text = text;
+    }
+
+    /**Constructor sets category to "Music" by default.
+     */
+    public ItunesCategoryType() {
+        this.text = "Music";
+    }
+
     /**The text attribute is representing the category of the item.
      * Getter method returns {@link String} object.
      * @return the text
