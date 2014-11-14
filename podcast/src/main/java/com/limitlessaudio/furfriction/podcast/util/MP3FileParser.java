@@ -13,7 +13,6 @@ import com.limitlessaudio.furfriction.podcast.xml.EnclosureType;
 import com.limitlessaudio.furfriction.podcast.xml.ItemType;
 import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesCategoryType;
 import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
-import com.mpatric.mp3agic.ID3v1;
 import com.mpatric.mp3agic.ID3v2;
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.Mp3File;
@@ -32,6 +31,13 @@ public final class MP3FileParser {
 
     }
 
+    /**TODO.
+      * @param filename todo
+      * @return todo
+      * @throws UnsupportedTagException todo
+      * @throws InvalidDataException todo
+      * @throws IOException todo
+      */
     public static ItemType getItemSkeletonFromAudioFile(final String filename) throws UnsupportedTagException, InvalidDataException, IOException {
         Mp3File file = new Mp3File(filename);
         ItemType item = new ItemType();
@@ -53,10 +59,9 @@ public final class MP3FileParser {
 
         String duration = file.getLengthInSeconds() + "";
         logger.debug(filename + " Duration before : " + duration);
-        duration = getDuration((int) file.getLengthInSeconds());
+        duration = convertDurationToString((int) file.getLengthInSeconds());
         item.setItunesDuration(duration);
         logger.debug(filename + " Duration after : " + duration);
-
         String guid = id3.getAlbum().toUpperCase() + " 00" + id3.getTrack() + " " + id3.getArtist() + " - " + id3.getTitle() + ".mp3";
         item.setGuid("http://furfriction.com/podcast/episodes/" + encodeURI(guid));
         item.setLink("http://furfriction.com/podcast/episodes/" + encodeURI(guid));
@@ -74,6 +79,11 @@ public final class MP3FileParser {
         return item;
     }
 
+    /**Gets the {@link ID3v2} tags from given {@link Mp3File} object.
+     * @param file is {@link Mp3File}
+     * @return {@link ID3v2}
+     * @throws UnsupportedTagException thrown when the file doesn't have ID3v2 parts.
+     */
     public static ID3v2 getID3v2(final Mp3File file) throws UnsupportedTagException {
         ID3v2 id3 = null;
         if (file.hasId3v2Tag()) {
@@ -102,10 +112,13 @@ public final class MP3FileParser {
         return result;
     }
 
-    public static String getDuration(int duration) {
+    /**Converts the given duration in seconds of the track to a text pattern as "HH:mm:ss".
+     * @param duration the length of the track is seconds. Allowable object is {@link Integer}
+     * @return the formatted {@link String}
+     */
+    public static String convertDurationToString(int duration) {
 
         String result = "";
-
         int h = duration / SECONDS_IN_HOUR;
         result += h + ":";
         int m = (duration - (h * SECONDS_IN_HOUR)) / MINUTES_IN_HOUR;
@@ -147,12 +160,21 @@ public final class MP3FileParser {
         }
     }
 
+    /**todo.
+     * @param filename todo
+     * @return todo
+     * @throws UnsupportedTagException todo
+     * @throws InvalidDataException todo
+     * @throws IOException todo
+     */
+
     public static String parseArtist(final String filename) throws UnsupportedTagException, InvalidDataException, IOException {
         String artist = "";
         Mp3File mp3File = new Mp3File(filename);
         logger.debug("Trying to extract the Artist field from file: " + mp3File.getFilename());
         if (mp3File.hasId3v1Tag()) {
-            ID3v1 id3v1 = mp3File.getId3v1Tag();
+            logger.debug("Not implemented yet");
+
         }
         if (mp3File.hasId3v2Tag()) {
             ID3v2 id3v2 = mp3File.getId3v2Tag();
