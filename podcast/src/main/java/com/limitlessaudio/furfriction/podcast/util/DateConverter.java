@@ -19,9 +19,11 @@ public final class DateConverter {
      *            convert from.
      * @return date in RFC822 formatted {@link String }
      */
-    public static String convertDateToRFC2822(java.util.Date date) {
-        String result = "";
-        if (date != null) {
+    public static String convertDateToRFC2822(final java.util.Date date) {
+        String result;
+        if (date == null) {
+            result = "";
+        } else {
             result = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.US).format(date);
         }
         return result;

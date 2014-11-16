@@ -1,0 +1,435 @@
+src/main/java/com/limitlessaudio/furfriction/podcast/PodcastHelper.java:16:	The Logger variable declaration does not contain the static and final modifiers
+src/main/java/com/limitlessaudio/furfriction/podcast/PodcastHelper.java:16:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/PodcastHelper.java:19:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/PodcastHelper.java:20:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/PodcastHelper.java:29:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/main/java/com/limitlessaudio/furfriction/podcast/PodcastHelper.java:29:	Parameter 'args' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/PodcastHelper.java:32:	Local variable 'parser' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/PodcastHelper.java:39:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/PodcastHelper.java:60:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/PodcastHelper.java:61:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:14:	Private field 'logger' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:14:	The Logger variable declaration does not contain the static and final modifiers
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:14:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:15:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:20:	Parameter 'file' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:34:	Parameter 'file' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:60:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:60:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:61:	Avoid throwing raw exception types.
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:67:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:67:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/file/FileParser.java:68:	Avoid throwing raw exception types.
+src/main/java/com/limitlessaudio/furfriction/podcast/util/DateConverter.java:22:	Parameter 'date' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/DateConverter.java:23:	Found 'DD'-anomaly for variable 'result' (lines '23'-'25').
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:21:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:25:	The Logger variable declaration does not contain the static and final modifiers
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:25:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:26:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:27:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:28:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:42:	Local variable 'file' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:43:	Local variable 'item' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:44:	Local variable 'id3' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:45:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:45:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:46:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:46:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:50:	Local variable 'itunesCategory' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:53:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:56:	Local variable 'description' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:56:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:60:	Do not add empty strings
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:60:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:61:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:61:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:62:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:63:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:64:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:64:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:65:	Local variable 'guid' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:65:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:66:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:66:	The String literal "http://furfriction.com/podcast/episodes/" appears 4 times in this file; the first occurrence is on line 66
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:67:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:69:	Local variable 'enclosure' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:72:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:73:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:74:	Local variable 'itunesImage' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:75:	Local variable 'href' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:75:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:88:	Found 'DD'-anomaly for variable 'id3' (lines '88'-'90').
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:88:	Found 'DU'-anomaly for variable 'id3' (lines '88'-'96').
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:102:	Parameter 'textToEncodeAsUri' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:106:	Found 'DD'-anomaly for variable 'result' (lines '106'-'109').
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:106:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:106:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:106:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:106:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:106:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:106:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:115:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:116:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:119:	Parameter 'duration' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:122:	Avoid variables with short names like h
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:122:	Local variable 'h' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:123:	Prefer StringBuffer over += for concatenating strings
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:124:	Avoid variables with short names like m
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:124:	Local variable 'm' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:125:	Prefer StringBuffer over += for concatenating strings
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:125:	Useless parentheses.
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:125:	Useless parentheses.
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:126:	Avoid variables with short names like s
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:126:	Local variable 's' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:127:	Prefer StringBuffer over += for concatenating strings
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:127:	Useless parentheses.
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:127:	Useless parentheses.
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:132:	Parameter 'number' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:133:	Found 'DD'-anomaly for variable 'condition' (lines '133'-'136').
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:143:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:149:	Local variable 'mp3File' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:150:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:150:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:151:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:151:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:152:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:152:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:153:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:153:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:172:	Found 'DD'-anomaly for variable 'artist' (lines '172'-'181').
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:173:	Local variable 'mp3File' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:174:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:174:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:174:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:175:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:179:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:180:	Local variable 'id3v2' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:180:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:182:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:182:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:189:	Found 'DD'-anomaly for variable 'artist' (lines '189'-'190').
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:194:	Parameter 'mp3file' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:195:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:195:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:198:	Parameter 'mp3file' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:199:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:199:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:200:	Local variable 'id3v2' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:202:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:202:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:202:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:203:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:203:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:203:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:204:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:204:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:204:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:205:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:205:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:205:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:206:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:206:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:206:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:207:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:207:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:207:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:208:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:208:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:208:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:209:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:209:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:209:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:210:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:210:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:210:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:211:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:211:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:211:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:212:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:212:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:212:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:213:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:213:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:213:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:214:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:214:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:214:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:215:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:215:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:215:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:216:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:216:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:216:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:217:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:217:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:217:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:218:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:218:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:218:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:219:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:219:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:219:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:220:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:220:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:220:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:221:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:221:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:221:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:223:	Local variable 'albumImageData' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:223:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:225:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:225:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:226:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:226:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:226:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:228:	Local variable 'mimeType' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:228:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:229:	Avoid excessively long variable names like albumImageFilename
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:229:	Local variable 'albumImageFilename' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:229:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:231:	Local variable 'file' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:234:	There is log block not surrounded by if
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:234:	debug logging that involves string concatenation should be guarded with isDebugEnabled() checks
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:238:	Parameter 'mimeType' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:239:	Found 'DD'-anomaly for variable 'extension' (lines '239'-'242').
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:239:	Found 'DD'-anomaly for variable 'extension' (lines '239'-'244').
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:240:	Local variable 'index' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:242:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:244:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:250:	Parameter 'filename' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:251:	Found 'DD'-anomaly for variable 'directory' (lines '251'-'253').
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:252:	Local variable 'index' could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/util/MP3FileParser.java:252:	String.indexOf(char) is faster than String.indexOf(String).
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:16:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:16:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:54:	Each class should declare at least one constructor
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:56:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:58:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:60:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:62:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:64:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:64:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:66:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:68:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:70:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:72:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:74:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:76:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:78:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:80:	Avoid unused private fields such as 'docs'.
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:80:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:82:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:84:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:85:	The String literal "http://www.itunes.com/dtds/podcast-1.0.dtd" appears 7 times in this file; the first occurrence is on line 85
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:86:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:88:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:90:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:92:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:94:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:96:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:98:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:113:	Parameter 'atomLink' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:127:	Parameter 'title' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:141:	Parameter 'link' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:159:	Parameter 'language' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:173:	Parameter 'description' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:177:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:190:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:199:	Parameter 'pubDate' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:213:	Parameter 'image' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:227:	Parameter 'copyright' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:231:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:236:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:268:	Parameter 'itunesAuthor' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:286:	Parameter 'itunesSubtitle' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:290:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:302:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:310:	Parameter 'itunesSummary' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:314:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:331:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:344:	Parameter 'itunesExplicit' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:364:	Parameter 'itunesOwner' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:384:	Parameter 'managingEditor' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:404:	Parameter 'webMaster' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:408:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:421:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:430:	Parameter 'lastBuildDate' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:447:	Parameter 'category' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:465:	Parameter 'ttl' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:481:	Parameter 'itunesCategory' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ChannelType.java:497:	Parameter 'itunesImage' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:8:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:9:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:11:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:56:	Each class should declare at least one constructor
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:59:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:61:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:63:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:67:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:77:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:81:	Parameter 'url' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:97:	Parameter 'length' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:101:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:101:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:120:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:120:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/EnclosureType.java:135:	Parameter 'type' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ImageType.java:8:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ImageType.java:35:	Each class should declare at least one constructor
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ImageType.java:38:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ImageType.java:40:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ImageType.java:42:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ImageType.java:54:	Parameter 'url' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ImageType.java:70:	Parameter 'title' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ImageType.java:88:	Parameter 'link' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:11:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:14:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:43:	Each class should declare at least one constructor
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:47:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:49:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:51:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:53:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:55:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:57:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:61:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:64:	The String literal "http://www.itunes.com/dtds/podcast-1.0.dtd" appears 7 times in this file; the first occurrence is on line 64
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:65:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:67:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:69:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:71:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:73:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:75:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:77:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:91:	Parameter 'title' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:107:	Parameter 'link' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:123:	Parameter 'description' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:127:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:140:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:149:	Parameter 'guid' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:165:	Parameter 'enclosure' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:169:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:182:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:191:	Parameter 'pubDate' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:207:	Parameter 'author' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:211:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:220:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:225:	Parameter 'itunesAuthor' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:229:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:237:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:241:	Parameter 'itunesSubtitle' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:245:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:246:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:248:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:256:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:257:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:259:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:263:	Parameter 'itunesSummary' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:279:	Parameter 'itunesCategory' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:283:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:283:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:284:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:285:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:286:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:287:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:297:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:297:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:298:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:299:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:300:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:301:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:307:	Parameter 'itunesDuration' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:323:	Parameter 'itunesImage' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/ItemType.java:343:	Parameter 'itunesExplicit' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/Rss.java:10:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/Rss.java:10:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/Rss.java:37:	Avoid short class names like Rss
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/Rss.java:37:	Each class should declare at least one constructor
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/Rss.java:40:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/Rss.java:42:	Avoid unused private fields such as 'version'.
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/Rss.java:42:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/Rss.java:58:	Parameter 'channel' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:8:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:8:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:9:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:13:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:20:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:22:	Private field 'rel' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:22:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:24:	Private field 'type' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:24:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:26:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:29:	Parameter 'href' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:48:	Parameter 'href' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:52:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:52:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:55:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:57:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/atom/AtomLinkType.java:63:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesCategoryType.java:8:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesCategoryType.java:8:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesCategoryType.java:9:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesCategoryType.java:15:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesCategoryType.java:21:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesCategoryType.java:48:	Parameter 'text' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesImageType.java:8:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesImageType.java:8:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesImageType.java:9:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesImageType.java:11:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesImageType.java:18:	Each class should declare at least one constructor
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesImageType.java:20:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesImageType.java:34:	Parameter 'href' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesOwnerType.java:8:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesOwnerType.java:8:	Comment is too large: Too many lines
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesOwnerType.java:10:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesOwnerType.java:12:	Comment is too large: Line too long
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesOwnerType.java:30:	Each class should declare at least one constructor
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesOwnerType.java:32:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesOwnerType.java:34:	fieldCommentRequirement Required
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesOwnerType.java:49:	Parameter 'name' is not assigned and could be declared final
+src/main/java/com/limitlessaudio/furfriction/podcast/xml/itunes/ItunesOwnerType.java:67:	Parameter 'email' is not assigned and could be declared final
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:13:	Each class should declare at least one constructor
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:15:	Use explicit scoping instead of the default package private level
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:15:	fieldCommentRequirement Required
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:18:	Document empty method
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:18:	publicMethodCommentRequirement Required
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:23:	publicMethodCommentRequirement Required
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:25:	Local variable 'file' could be declared final
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:26:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:27:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:36:	publicMethodCommentRequirement Required
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:38:	Local variable 'file' could be declared final
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/limitlessaudio/furfriction/podcast/file/FileParserTest.java:40:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:12:	Each class should declare at least one constructor
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:15:	Document empty method
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:15:	publicMethodCommentRequirement Required
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:20:	publicMethodCommentRequirement Required
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:22:	Local variable 'expected' could be declared final
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:23:	Local variable 'calendar' could be declared final
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:24:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:26:	Local variable 'actual' could be declared final
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:26:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:32:	publicMethodCommentRequirement Required
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:34:	Local variable 'expected' could be declared final
+src/test/java/com/limitlessaudio/furfriction/podcast/util/DateConverterTest.java:36:	Local variable 'actual' could be declared final

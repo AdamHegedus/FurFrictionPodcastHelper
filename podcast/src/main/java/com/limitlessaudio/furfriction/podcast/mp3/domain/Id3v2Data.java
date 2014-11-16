@@ -5,8 +5,8 @@ package com.limitlessaudio.furfriction.podcast.mp3.domain;
  */
 public class Id3v2Data {
 
-    private static final int CHARACTER_LENGTH_IS_ONE = 1;
-    private static final int CHARACTER_LENGTH_IS_TWO = 2;
+    private static final int ONE = 1;
+    private static final int TWO = 2;
     private static final int SECONDS_IN_HOUR = Integer.valueOf(3600);
     private static final int MINUTES_IN_HOUR = Integer.valueOf(60);
     private String artist;
@@ -26,7 +26,7 @@ public class Id3v2Data {
     /**Sets the artist field by given parameter.
      * @param artist the artist to set
      */
-    public void setArtist(String artist) {
+    public void setArtist(final String artist) {
         this.artist = artist;
     }
 
@@ -40,7 +40,7 @@ public class Id3v2Data {
     /**Sets the album field by given parameter.
      * @param album the album to set
      */
-    public void setAlbum(String album) {
+    public void setAlbum(final String album) {
         this.album = album;
     }
 
@@ -54,7 +54,7 @@ public class Id3v2Data {
     /**Sets the title field by given parameter.
      * @param title the title to set
      */
-    public void setTitle(String title) {
+    public void setTitle(final String title) {
         this.title = title;
     }
 
@@ -68,7 +68,7 @@ public class Id3v2Data {
     /**Sets the comment field by given parameter.
      * @param comment the comment to set
      */
-    public void setComment(String comment) {
+    public void setComment(final String comment) {
         this.comment = comment;
     }
 
@@ -82,7 +82,7 @@ public class Id3v2Data {
     /**Sets the duration by the given parameter.
      * @param duration the duration to set
      */
-    public void setDuration(long duration) {
+    public void setDuration(final long duration) {
         this.duration = duration;
     }
 
@@ -97,14 +97,14 @@ public class Id3v2Data {
             if (!isLessThanOneHour()) {
                 result += getDurationHours() + ":";
             }
-            result += addLeadingZeroIfLessThanTen(getDurationMinutes() + "") + ":";
+            result += addLeadingZeroIfLessThanTen(Integer.toString(getDurationMinutes())) + ":";
         }
-        result += addLeadingZeroIfLessThanTen(getDurationSeconds() + "");
+        result += addLeadingZeroIfLessThanTen(Integer.toString(getDurationSeconds()));
         return result;
     }
 
     private String addLeadingZeroIfLessThanTen(final String text) {
-        return text.length() < CHARACTER_LENGTH_IS_TWO ? "0" + text : text;
+        return text.length() < TWO ? "0" + text : text;
     }
 
     private boolean isLessThanOneHour() {
@@ -116,18 +116,15 @@ public class Id3v2Data {
     }
 
     private int getDurationHours() {
-        final int hours = (int) (duration / SECONDS_IN_HOUR);
-        return hours;
+        return (int) (duration / SECONDS_IN_HOUR);
     }
 
     private int getDurationMinutes() {
-        final int minutes = (int) (duration % SECONDS_IN_HOUR) / MINUTES_IN_HOUR;
-        return minutes;
+        return (int) (duration % SECONDS_IN_HOUR) / MINUTES_IN_HOUR;
     }
 
     private int getDurationSeconds() {
-        final int seconds = (int) (duration % MINUTES_IN_HOUR);
-        return seconds;
+        return (int) (duration % MINUTES_IN_HOUR);
     }
 
     /**Gets the track number field.
@@ -140,7 +137,7 @@ public class Id3v2Data {
     /**Sets the track number field by given parameter.
      * @param trackNumber the trackNumber to set
      */
-    public void setTrackNumber(String trackNumber) {
+    public void setTrackNumber(final String trackNumber) {
         this.trackNumber = trackNumber;
     }
 
@@ -148,14 +145,14 @@ public class Id3v2Data {
      * @return the trackNumber
      */
     public String getTrackNumberFormattedToThreeCharacter() {
-        String result = "";
+        String result;
 
         switch (trackNumber.length()) {
-        case CHARACTER_LENGTH_IS_TWO:
+        case TWO:
             result = "0" + trackNumber;
             break;
 
-        case CHARACTER_LENGTH_IS_ONE:
+        case ONE:
             result = "00" + trackNumber;
             break;
 

@@ -49,7 +49,7 @@ public class AtomLinkType {
         this.href = href;
     }
 
-    /**<p>The element may contain a rel attribute, which contains a keyword that identifies the nature of the relationship between the linked resouce and the element.
+    /**<p>The element may contain a rel attribute, which contains a keyword that identifies the nature of the relationship between the linked resource and the element.
      * Five relationships are possible:</p>
      * self:<br>
      * - describes the feed itself (most likely used by in this case for the podcast)<br>
