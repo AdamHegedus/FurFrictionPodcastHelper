@@ -247,9 +247,9 @@ public final class MP3FileParser {
         return extension;
     }
 
-    private static String parseDirectoryFromFilename(String filename) {
+    private static String parseDirectoryFromFilename(final String filename) {
         String directory = "";
-        int index = filename.lastIndexOf("/");
+        final int index = filename.lastIndexOf("/");
         directory = filename.substring(0, index);
         return directory;
     }

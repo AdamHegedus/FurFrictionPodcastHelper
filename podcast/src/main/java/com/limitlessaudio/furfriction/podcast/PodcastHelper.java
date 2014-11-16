@@ -14,10 +14,10 @@ import com.limitlessaudio.furfriction.podcast.file.FileParser;
 public final class PodcastHelper {
 
     private static Logger logger = LoggerFactory.getLogger(PodcastHelper.class);
-    private static final String TEST_FILE = "d:/data/EPC001.mp3";
-    private static final String TEST_DIRECTORY = "d:/data/test/1";
-
+    //    private static final String TEST_FILE = "d:/data/EPC001.mp3";
+    //    private static final String TEST_DIRECTORY = "d:/data/test/1";
     //    private static final String TEST_FILE = "d:/FUR FRICTION Podcast/FUR FRICTION 006 DSH - Big Fat Cat.mp3";
+    private static final String DIRECTORY = "d:/test/";
 
     private PodcastHelper() {
 
@@ -28,7 +28,8 @@ public final class PodcastHelper {
      */
     public static void main(String[] args) {
 
-        FileParser parser = new FileParser(new File(TEST_DIRECTORY));
+        logger.debug("Application Entry.");
+        FileParser parser = new FileParser(new File(DIRECTORY));
         parser.parseDirectory();
 
         //        JAXBContext ctx;

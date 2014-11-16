@@ -44,6 +44,15 @@ public class FileParser {
     private void validate() {
         validateFileExists();
         validateIsDirectory();
+        listDirectory();
+    }
+
+    private void listDirectory() {
+        File[] files = file.listFiles();
+        for (File f : files) {
+            logger.debug(f.getAbsolutePath());
+        }
+
     }
 
     private void validateFileExists() {
