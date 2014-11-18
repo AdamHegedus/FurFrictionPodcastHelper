@@ -9,10 +9,10 @@ public class Id3v2Data {
     private static final int TWO = 2;
     private static final int SECONDS_IN_HOUR = Integer.valueOf(3600);
     private static final int MINUTES_IN_HOUR = Integer.valueOf(60);
-    private String artist;
-    private String album;
-    private String title;
-    private String comment;
+    private String artist = "";
+    private String album = "";
+    private String title = "";
+    private String comment = "";
     private long duration;
     private String trackNumber = "0";
 
@@ -70,6 +70,14 @@ public class Id3v2Data {
      */
     public void setComment(final String comment) {
         this.comment = comment;
+    }
+
+    /**Gets the comments in CDATA.
+     * @return the comment formatted
+     */
+    public String getCommentAsCData() {
+        String commentCData = "<![CDATA[" + comment + "]]>";
+        return commentCData;
     }
 
     /**Gets the duration of the track.
@@ -163,4 +171,15 @@ public class Id3v2Data {
         return result;
     }
 
+    private String getAlbumAsUpperCase() {
+        return this.getAlbum().toUpperCase();
+    }
+
+    /**Gets the itunesSubtitle parameter as {@link String} created by UpperCase Album property + pre-zeroed tracknumber.
+     * @return itunesSubtitle
+     */
+    public String getItunesSubtitle() {
+        String itunesSubtitle = getAlbumAsUpperCase() + " " + getTrackNumberFormattedToThreeCharacter();
+        return itunesSubtitle;
+    }
 }

@@ -126,4 +126,27 @@ public class Id3v2DataTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testGetCommentAsCData() {
+        // GIVEN
+        final String expected = "<![CDATA[Comments inside the CDATA element.]]>";
+        underTest.setComment("Comments inside the CDATA element.");
+        // WHEN
+        String actual = underTest.getCommentAsCData();
+        // THEN
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testGetItunesSubtitle() {
+        // GIVEN
+        final String expected = "FUR FRICTION 007";
+        underTest.setAlbum("Fur Friction");
+        underTest.setTrackNumber("7");
+        // WHEN
+        String actual = underTest.getItunesSubtitle();
+        // THEN
+        Assert.assertEquals(expected, actual);
+    }
+
 }

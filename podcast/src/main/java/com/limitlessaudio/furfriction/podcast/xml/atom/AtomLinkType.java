@@ -23,6 +23,11 @@ public class AtomLinkType {
     @XmlAttribute(name = "type", required = true)
     private String type;
 
+    /**Empty.
+     */
+    public AtomLinkType() {
+    }
+
     /**Constructor sets members default to "self" and "application/rss+xml" with the given parameter as "href".
      * @param href is {@link String}, the xml file's URI
      */

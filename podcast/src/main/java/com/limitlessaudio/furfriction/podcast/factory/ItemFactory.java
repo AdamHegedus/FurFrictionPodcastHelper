@@ -14,6 +14,12 @@ public class ItemFactory {
      */
     public ItemType getItem(final Id3v2Data data) {
         ItemType item = new ItemType();
+        item.setAuthor(data.getArtist());
+        item.setItunesAuthor(data.getArtist());
+        item.setItunesDuration(data.getDurationFormatted());
+        item.setTitle(data.getTitle());
+        item.setItunesSubtitle(data.getItunesSubtitle());
+
         return item;
     }
 }

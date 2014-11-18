@@ -1,9 +1,18 @@
 package com.limitlessaudio.furfriction.podcast.file;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.limitlessaudio.furfriction.podcast.factory.ItemFactory;
+import com.limitlessaudio.furfriction.podcast.mp3.domain.Id3v2Data;
+import com.limitlessaudio.furfriction.podcast.xml.ItemType;
+import com.mpatric.mp3agic.ID3v2;
+import com.mpatric.mp3agic.InvalidDataException;
+import com.mpatric.mp3agic.Mp3File;
+import com.mpatric.mp3agic.UnsupportedTagException;
 
 /**Reads input files and parse Mp3 data from them.
  * @author adam_hegedus
@@ -39,20 +48,47 @@ public class FileParser {
      */
     public void parseDirectory() {
         validate();
+        try {
+            listDirectory();
+        } catch (UnsupportedTagException | InvalidDataException | IOException e) {
+            logger.warn(e.toString());
+        }
     }
 
     private void validate() {
         validateFileExists();
         validateIsDirectory();
-        listDirectory();
+
     }
 
-    private void listDirectory() {
-        File[] files = file.listFiles();
-        for (File f : files) {
-            logger.debug(f.getAbsolutePath());
-        }
+    /**Gets the parsed data from Mp3 files and creates an item skeleton.
+     * @return item skeleton
+     * @throws IOException
+     * @throws InvalidDataException
+     * @throws UnsupportedTagException
+     * @param filename Filename of the mp3
+     */
+    public ItemType getParsedItemSkeleton(String filename) throws UnsupportedTagException, InvalidDataException, IOException {
+        ItemFactory factory = new ItemFactory();
+        ItemType item;
+        Mp3File mp3 = new Mp3File(filename);
+        ID3v2 id3 = mp3.getId3v2Tag();
+        Id3v2Data data = new Id3v2Data();
 
+        data.setAlbum(id3.getAlbum());
+        data.setArtist(id3.getArtist());
+        data.setComment(id3.getComment());
+        data.setDuration(mp3.getLengthInSeconds());
+        data.setTitle(id3.getTitle());
+        data.setTrackNumber(id3.getTrack());
+
+        item = factory.getItem(data);
+
+        return item;
+    }
+
+    private void listDirectory() throws UnsupportedTagException, InvalidDataException, IOException {
+        File[] files = file.listFiles();
     }
 
     private void validateFileExists() {
