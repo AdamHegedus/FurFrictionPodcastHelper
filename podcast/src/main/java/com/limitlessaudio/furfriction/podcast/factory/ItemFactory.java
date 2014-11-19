@@ -2,6 +2,7 @@ package com.limitlessaudio.furfriction.podcast.factory;
 
 import com.limitlessaudio.furfriction.podcast.mp3.domain.Id3v2Data;
 import com.limitlessaudio.furfriction.podcast.xml.ItemType;
+import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesCategoryType;
 
 /**Creates {@link ItemType} items.
  * @author x
@@ -19,6 +20,9 @@ public class ItemFactory {
         item.setItunesDuration(data.getDurationFormatted());
         item.setTitle(data.getTitle());
         item.setItunesSubtitle(data.getItunesSubtitle());
+        item.setItunesSummary(data.getCommentAsCData());
+        item.setItunesCategory(new ItunesCategoryType("Music"));
+        item.setDescription(data.getCommentAsCData());
 
         return item;
     }

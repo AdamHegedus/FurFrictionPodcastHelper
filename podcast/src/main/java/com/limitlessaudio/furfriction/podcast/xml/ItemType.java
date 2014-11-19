@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesCategoryType;
 import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
@@ -66,6 +67,7 @@ public class ItemType {
     @XmlElement(required = true, name = "subtitle", namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")
     private String itunesSubtitle;
     @XmlElement(required = true, name = "summary", namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")
+    @XmlJavaTypeAdapter(AdapterCDATA.class)
     private String itunesSummary;
     @XmlElement(name = "category", namespace = "http://www.itunes.com/dtds/podcast-1.0.dtd")
     private ItunesCategoryType itunesCategory;

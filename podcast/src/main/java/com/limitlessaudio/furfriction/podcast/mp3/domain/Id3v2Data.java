@@ -12,7 +12,7 @@ public class Id3v2Data {
     private String artist = "";
     private String album = "";
     private String title = "";
-    private String comment = "";
+    private String comment = " ";
     private long duration;
     private String trackNumber = "0";
 

@@ -67,6 +67,7 @@ public final class PodcastHelper {
 
             Marshaller marshaller = ctx.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
             OutputStream outputXml = new FileOutputStream("resources/output.xml");
             rss.getChannel().setLastBuildDate(DateConverter.convertDateToRFC2822(new Date()));
             marshaller.marshal(rss, outputXml);

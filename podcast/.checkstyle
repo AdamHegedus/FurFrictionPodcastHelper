@@ -4,4 +4,7 @@
   <fileset name="all" enabled="true" check-config-name="EPAM" local="false">
     <file-match-pattern match-pattern="." include-pattern="true"/>
   </fileset>
+  <filter name="FilesFromPackage" enabled="false">
+    <filter-data value="resources"/>
+  </filter>
 </fileset-config>

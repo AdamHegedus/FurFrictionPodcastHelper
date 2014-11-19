@@ -11,7 +11,7 @@
         <managingEditor>fox.fairplay@gmail.com (Fox Fairplay)</managingEditor>
         <webMaster>adam.hegedus@limitless-audio.com  (Adam Hegedus)</webMaster>
         <pubDate>Tue, 30 Sep 2014 20:00:00 +0200</pubDate>
-        <lastBuildDate>Tue, 18 Nov 2014 17:53:35 +0100</lastBuildDate>
+        <lastBuildDate>Wed, 19 Nov 2014 18:23:18 +0100</lastBuildDate>
         <category>Music</category>
         <ttl>720</ttl>
         <image>
@@ -39,7 +39,7 @@
             <author>Fox Fairplay</author>
             <itunes:author>Fox Fairplay</itunes:author>
             <itunes:subtitle>FUR FRICTION 001</itunes:subtitle>
-            <itunes:summary>&quot;Anywhere in the world I could go to hear something like this in public? A bar, dance club, whatever, i don't care. It would just be nice to hear this somewhere other that the typical places, car and home. This is real slick mix for sure.&quot;</itunes:summary>
+            <itunes:summary>&lt;![CDATA[&quot;Anywhere in the world I could go to hear something like this in public? A bar, dance club, whatever, i don't care. It would just be nice to hear this somewhere other that the typical places, car and home. This is real slick mix for sure.&quot;]]&gt;</itunes:summary>
             <itunes:duration>0:36:36</itunes:duration>
             <itunes:image href="http://furfriction.com/podcast/episodes/FUR%20FRICTION%20001.jpg"/>
             <itunes:explicit>Clean</itunes:explicit>
@@ -54,7 +54,7 @@
             <author>Kauna</author>
             <itunes:author>Kauna</itunes:author>
             <itunes:subtitle>FUR FRICTION 002</itunes:subtitle>
-            <itunes:summary>Kauna is a Hungarian producer who has several tracks released on the label Limitless Audio, which he also featured in this mix too. Some unreleased materials, collaborations and remixes with Addamz are also included in this package. Fresh and Warm mixture of his current favorites.</itunes:summary>
+            <itunes:summary>&lt;![CDATA[Kauna is a Hungarian producer who has several tracks released on the label Limitless Audio, which he also featured in this mix too. Some unreleased materials, collaborations and remixes with Addamz are also included in this package. Fresh and Warm mixture of his current favorites.]]&gt;</itunes:summary>
             <itunes:duration>0:59:27</itunes:duration>
             <itunes:image href="http://furfriction.com/podcast/episodes/FUR%20FRICTION%20002.jpg"/>
             <itunes:explicit>Clean</itunes:explicit>
@@ -69,7 +69,7 @@
             <author>Fox Fairplay</author>
             <itunes:author>Fox Fairplay</itunes:author>
             <itunes:subtitle>FUR FRICTION 003</itunes:subtitle>
-            <itunes:summary>The Fox got his paws on some wax and mixed them in a solid style. He is so sly, even wants to trade some fur. Are you ready for some bargain? </itunes:summary>
+            <itunes:summary>&lt;![CDATA[The Fox got his paws on some wax and mixed them in a solid style. He is so sly, even wants to trade some fur. Are you ready for some bargain? ]]&gt;</itunes:summary>
             <itunes:duration>0</itunes:duration>
             <itunes:image href="http://furfriction.com/podcast/episodes/FUR%20FRICTION%20003.jpg"/>
             <itunes:explicit>Clean</itunes:explicit>
@@ -88,11 +88,11 @@ A story which have an open end...</description>
             <author>Fox Fairplay</author>
             <itunes:author>Fox Fairplay</itunes:author>
             <itunes:subtitle>FUR FRICTION 004</itunes:subtitle>
-            <itunes:summary>Foxes can be sly and shifty but they are solid and you can see the truth reflected in their eyes clearly.
+            <itunes:summary>&lt;![CDATA[Foxes can be sly and shifty but they are solid and you can see the truth reflected in their eyes clearly.
 
 This mix tells a story and the track list also.
 A story which have the fox's blue eyes turn red.
-A story which have an open end...</itunes:summary>
+A story which have an open end...]]&gt;</itunes:summary>
             <itunes:duration>0</itunes:duration>
             <itunes:image href="http://furfriction.com/podcast/episodes/FUR%20FRICTION%20004.jpg"/>
             <itunes:explicit>Clean</itunes:explicit>
@@ -107,7 +107,7 @@ A story which have an open end...</itunes:summary>
             <author>Fox Fairplay</author>
             <itunes:author>Fox Fairplay</itunes:author>
             <itunes:subtitle>FUR FRICTION 005</itunes:subtitle>
-            <itunes:summary>Foxes love to live their lively, exciting furry life, run after their prey, gophers, squirrels, bunnies and other rodents. But there is only one Bunny!</itunes:summary>
+            <itunes:summary>&lt;![CDATA[Foxes love to live their lively, exciting furry life, run after their prey, gophers, squirrels, bunnies and other rodents. But there is only one Bunny!]]&gt;</itunes:summary>
             <itunes:duration>0</itunes:duration>
             <itunes:image href="http://furfriction.com/podcast/episodes/FUR%20FRICTION%20005.jpg"/>
             <itunes:explicit>Clean</itunes:explicit>
@@ -122,7 +122,7 @@ A story which have an open end...</itunes:summary>
             <author>DSH</author>
             <itunes:author>DSH</itunes:author>
             <itunes:subtitle>FUR FRICTION 006</itunes:subtitle>
-            <itunes:summary></itunes:summary>
+            <itunes:summary>&lt;![CDATA[]]&gt;</itunes:summary>
             <itunes:duration>0</itunes:duration>
             <itunes:image href="http://furfriction.com/podcast/episodes/FUR%20FRICTION%20006.jpg"/>
             <itunes:explicit>Clean</itunes:explicit>
@@ -137,16 +137,19 @@ A story which have an open end...</itunes:summary>
             <author>Kauna</author>
             <itunes:author>Kauna</itunes:author>
             <itunes:subtitle>FUR FRICTION 007</itunes:subtitle>
-            <itunes:summary></itunes:summary>
+            <itunes:summary>&lt;![CDATA[]]&gt;</itunes:summary>
             <itunes:duration>0</itunes:duration>
             <itunes:image href="http://furfriction.com/podcast/episodes/FUR%20FRICTION%20007.jpg"/>
             <itunes:explicit>Yes</itunes:explicit>
         </item>
         <item>
             <title>Existence</title>
+            <description>&lt;![CDATA[http://addamz.limitless-audio.com/]]&gt;</description>
             <author>Addamz</author>
             <itunes:author>Addamz</itunes:author>
             <itunes:subtitle>EPICENTRE 001</itunes:subtitle>
+            <itunes:summary>&lt;![CDATA[&lt;![CDATA[http://addamz.limitless-audio.com/]]&gt;]]&gt;</itunes:summary>
+            <itunes:category text="Music"/>
             <itunes:duration>1:19:20</itunes:duration>
         </item>
     </channel>
