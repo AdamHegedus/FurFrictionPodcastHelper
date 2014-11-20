@@ -19,26 +19,88 @@ public class DateFactoryTest {
     }
 
     @Test
-    public void testGetLastSundayShouldReturn2014November30When2014NovemberGiven() {
+    public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastSunday() {
         // GIVEN
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2014, 10, 30, 20, 0, 0);
+        calendar.set(2014, 11, 28, 20, 0, 0);
         Date expected = calendar.getTime();
         // WHEN
-        Date actual = underTest.getLastSunday(10, 2014);
+        Date actual = underTest.getMonthsLastDayAsDayOfWeek(11, 2014, Calendar.SUNDAY);
         // THEN
         Assert.assertEquals(expected, actual);
     }
 
     @Test
-    public void testGetLastSundayShouldReturn2015January25When2015JanuaryGiven() {
+    public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastMonday() {
         // GIVEN
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2015, 0, 25, 20, 0, 0);
+        calendar.set(2014, 11, 29, 20, 0, 0);
         Date expected = calendar.getTime();
         // WHEN
-        Date actual = underTest.getLastSunday(0, 2015);
+        Date actual = underTest.getMonthsLastDayAsDayOfWeek(11, 2014, Calendar.MONDAY);
         // THEN
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastTuesday() {
+        // GIVEN
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2014, 11, 30, 20, 0, 0);
+        Date expected = calendar.getTime();
+        // WHEN
+        Date actual = underTest.getMonthsLastDayAsDayOfWeek(11, 2014, Calendar.TUESDAY);
+        // THEN
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastWednesday() {
+        // GIVEN
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2014, 11, 31, 20, 0, 0);
+        Date expected = calendar.getTime();
+        // WHEN
+        Date actual = underTest.getMonthsLastDayAsDayOfWeek(11, 2014, Calendar.WEDNESDAY);
+        // THEN
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastThursday() {
+        // GIVEN
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2014, 11, 25, 20, 0, 0);
+        Date expected = calendar.getTime();
+        // WHEN
+        Date actual = underTest.getMonthsLastDayAsDayOfWeek(11, 2014, Calendar.THURSDAY);
+        // THEN
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastFriday() throws InterruptedException {
+        // GIVEN
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2014, 11, 26, 20, 0, 0);
+        Date expected = calendar.getTime();
+        // WHEN
+        Date actual = underTest.getMonthsLastDayAsDayOfWeek(11, 2014, Calendar.FRIDAY);
+        // THEN
+        Assert.assertEquals(expected.getTime(), actual.getTime());
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastSaturday() {
+        // GIVEN
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2014, 11, 27, 20, 0, 0);
+        Date expected = calendar.getTime();
+        // WHEN
+        Date actual = underTest.getMonthsLastDayAsDayOfWeek(11, 2014, Calendar.SATURDAY);
+        // THEN
+        Assert.assertEquals(expected, actual);
+    }
+
 }
