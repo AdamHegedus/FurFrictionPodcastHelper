@@ -127,17 +127,6 @@ public class Id3v2DataTest {
     }
 
     @Test
-    public void testGetCommentAsCData() {
-        // GIVEN
-        final String expected = "<![CDATA[Comments inside the CDATA element.]]>";
-        underTest.setComment("Comments inside the CDATA element.");
-        // WHEN
-        String actual = underTest.getCommentAsCData();
-        // THEN
-        Assert.assertEquals(expected, actual);
-    }
-
-    @Test
     public void testGetItunesSubtitle() {
         // GIVEN
         final String expected = "FUR FRICTION 007";

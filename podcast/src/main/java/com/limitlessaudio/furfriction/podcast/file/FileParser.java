@@ -69,7 +69,7 @@ public class FileParser {
      * @param filename Filename of the mp3
      */
     public ItemType getParsedItemSkeleton(String filename) throws UnsupportedTagException, InvalidDataException, IOException {
-        ItemFactory factory = new ItemFactory();
+        ItemFactory factory = new ItemFactory("http://furfriction.com/podcast/");
         ItemType item;
         Mp3File mp3 = new Mp3File(filename);
         ID3v2 id3 = mp3.getId3v2Tag();
@@ -81,6 +81,7 @@ public class FileParser {
         data.setDuration(mp3.getLengthInSeconds());
         data.setTitle(id3.getTitle());
         data.setTrackNumber(id3.getTrack());
+        data.setFilesize(mp3.getLength());
 
         item = factory.getItem(data);
 

@@ -19,6 +19,19 @@ public class ItunesImageType {
     @XmlAttribute(name = "href", required = true)
     private String href;
 
+    /**Default empty constructor used by JAXB marshal / unmarshal operations.
+     */
+    public ItunesImageType() {
+
+    }
+
+    /**Sets the image's URI reference while instantiating.
+     * @param href the reference of the image
+     */
+    public ItunesImageType(final String href) {
+        this.href = href;
+    }
+
     /**The href attribute is representing the URI of the image.
      * Getter method returns {@link String} object.
      * @return the href
@@ -31,8 +44,7 @@ public class ItunesImageType {
      * Setter method accepts {@link String} as parameter
      * @param href the href to set
      */
-    public void setHref(String href) {
+    public void setHref(final String href) {
         this.href = href;
     }
-
 }

@@ -15,6 +15,7 @@ public class Id3v2Data {
     private String comment = " ";
     private long duration;
     private String trackNumber = "0";
+    private long filesize;
 
     /**Gets the artist field.
      * @return the artist
@@ -70,14 +71,6 @@ public class Id3v2Data {
      */
     public void setComment(final String comment) {
         this.comment = comment;
-    }
-
-    /**Gets the comments in CDATA.
-     * @return the comment formatted
-     */
-    public String getCommentAsCData() {
-        String commentCData = "<![CDATA[" + comment + "]]>";
-        return commentCData;
     }
 
     /**Gets the duration of the track.
@@ -181,5 +174,19 @@ public class Id3v2Data {
     public String getItunesSubtitle() {
         String itunesSubtitle = getAlbumAsUpperCase() + " " + getTrackNumberFormattedToThreeCharacter();
         return itunesSubtitle;
+    }
+
+    /**Returns the size of the mp3.
+     * @return the filesize
+     */
+    public long getFilesize() {
+        return filesize;
+    }
+
+    /**Sets the size of the mp3.
+     * @param filesize the filesize to set
+     */
+    public void setFilesize(long filesize) {
+        this.filesize = filesize;
     }
 }
