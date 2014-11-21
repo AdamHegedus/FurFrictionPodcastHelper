@@ -3,7 +3,7 @@ package com.limitlessaudio.furfriction.podcast.mp3.domain;
 /**Bean class to handle MP3.
  * @author x
  */
-public class Id3v2Data {
+public class Id3Data {
 
     private static final int ONE = 1;
     private static final int TWO = 2;

@@ -6,9 +6,10 @@ import java.io.IOException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.limitlessaudio.furfriction.podcast.factory.ItemFactory;
-import com.limitlessaudio.furfriction.podcast.mp3.domain.Id3v2Data;
+import com.limitlessaudio.furfriction.podcast.mp3.domain.Id3Data;
+import com.limitlessaudio.furfriction.podcast.mp3.domain.Mp3Wrapper;
 import com.limitlessaudio.furfriction.podcast.xml.domain.ItemType;
+import com.limitlessaudio.furfriction.podcast.xml.factory.ItemFactory;
 import com.mpatric.mp3agic.ID3v2;
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.Mp3File;
@@ -68,20 +69,32 @@ public class FileParser {
      * @throws UnsupportedTagException
      * @param filename Filename of the mp3
      */
-    public ItemType getParsedItemSkeleton(String filename) throws UnsupportedTagException, InvalidDataException, IOException {
+    public ItemType getParsedItemSkeleton(final String filename) throws UnsupportedTagException, InvalidDataException, IOException {
         ItemFactory factory = new ItemFactory("http://furfriction.com/podcast/");
         ItemType item;
-        Mp3File mp3 = new Mp3File(filename);
-        ID3v2 id3 = mp3.getId3v2Tag();
-        Id3v2Data data = new Id3v2Data();
 
-        data.setAlbum(id3.getAlbum());
-        data.setArtist(id3.getArtist());
-        data.setComment(id3.getComment());
-        data.setDuration(mp3.getLengthInSeconds());
-        data.setTitle(id3.getTitle());
-        data.setTrackNumber(id3.getTrack());
-        data.setFilesize(mp3.getLength());
+        Mp3File mp3 = new Mp3File(filename);
+
+        ID3v2 id3 = mp3.getId3v2Tag();
+        Id3Data data = new Id3Data();
+        Mp3Wrapper wrapper = new Mp3Wrapper();
+        data = wrapper.getMp3Data(filename);
+
+        //        String album = id3.getAlbum();
+        //        String artist = id3.getArtist();
+        //        String comment = id3.getComment();
+        //        String title = id3.getTitle();
+        //        String trackNumber = id3.getTrack();
+        //        long duration = mp3.getLengthInSeconds();
+        //        long filesize = mp3.getLength();
+        //
+        //        data.setAlbum(id3.getAlbum());
+        //        data.setArtist(id3.getArtist());
+        //        data.setComment(id3.getComment());
+        //        data.setDuration(mp3.getLengthInSeconds());
+        //        data.setTitle(id3.getTitle());
+        //        data.setTrackNumber(id3.getTrack());
+        //        data.setFilesize(mp3.getLength());
 
         item = factory.getItem(data);
 

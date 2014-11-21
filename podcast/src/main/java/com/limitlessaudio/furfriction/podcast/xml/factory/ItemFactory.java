@@ -1,9 +1,9 @@
-package com.limitlessaudio.furfriction.podcast.factory;
+package com.limitlessaudio.furfriction.podcast.xml.factory;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import com.limitlessaudio.furfriction.podcast.mp3.domain.Id3v2Data;
+import com.limitlessaudio.furfriction.podcast.mp3.domain.Id3Data;
 import com.limitlessaudio.furfriction.podcast.xml.domain.EnclosureType;
 import com.limitlessaudio.furfriction.podcast.xml.domain.ItemType;
 import com.limitlessaudio.furfriction.podcast.xml.domain.itunes.ItunesCategoryType;
@@ -14,7 +14,7 @@ import com.limitlessaudio.furfriction.podcast.xml.domain.itunes.ItunesImageType;
  */
 public class ItemFactory {
 
-    private String url;
+    private final String url;
 
     /**Sets the url to the default base for further processing.
      * @param url the url to set
@@ -24,11 +24,11 @@ public class ItemFactory {
     }
 
     /**Returns new {@link ItemType}.
-     * @param data {@link Id3v2Data} contains the ID3 data
+     * @param data {@link Id3Data} contains the ID3 data
      * @return the instantiated new object
      */
-    public ItemType getItem(final Id3v2Data data) {
-        ItemType item = new ItemType();
+    public ItemType getItem(final Id3Data data) {
+        final ItemType item = new ItemType();
         item.setAuthor(data.getArtist());
         item.setItunesAuthor(data.getArtist());
         item.setItunesDuration(data.getDurationFormatted());
@@ -37,18 +37,18 @@ public class ItemFactory {
         item.setItunesSummary(data.getComment());
         item.setItunesCategory(new ItunesCategoryType("Music"));
         item.setDescription(data.getComment());
-        String guid = url
+        final String guid = url
                 + "episodes/"
                 + encodeURI(data.getAlbum() + " " + data.getTrackNumberFormattedToThreeCharacter() + " " + data.getArtist() + " - " + data.getTitle()
                         + ".mp3");
         item.setGuid(guid);
         item.setLink(guid);
-        EnclosureType enclosure = new EnclosureType();
+        final EnclosureType enclosure = new EnclosureType();
         enclosure.setType("audio/mpeg");
         enclosure.setLength((int) data.getFilesize());
         enclosure.setUrl(guid);
         item.setEnclosure(enclosure);
-        String imageLink = url + "episodes/" + encodeURI(data.getTrackNumberFormattedToThreeCharacter() + " " + data.getAlbum() + ".jpg");
+        final String imageLink = url + "episodes/" + encodeURI(data.getTrackNumberFormattedToThreeCharacter() + " " + data.getAlbum() + ".jpg");
         item.setItunesImage(new ItunesImageType(imageLink));
 
         return item;
@@ -58,7 +58,7 @@ public class ItemFactory {
      * @param textToEncodeAsUri is {@link String}
      * @return result is {@link String}
      */
-    public String encodeURI(String textToEncodeAsUri) {
+    public String encodeURI(final String textToEncodeAsUri) {
         String result;
 
         try {

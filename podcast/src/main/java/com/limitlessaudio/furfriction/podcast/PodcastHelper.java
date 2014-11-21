@@ -8,7 +8,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.Writer;
-import java.util.Date;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -19,7 +18,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.limitlessaudio.furfriction.podcast.file.FileParser;
-import com.limitlessaudio.furfriction.podcast.util.DateConverter;
 import com.limitlessaudio.furfriction.podcast.xml.domain.ItemType;
 import com.limitlessaudio.furfriction.podcast.xml.domain.RssType;
 import com.mpatric.mp3agic.InvalidDataException;
@@ -80,7 +78,7 @@ public final class PodcastHelper {
             });
             OutputStream outputXml = new FileOutputStream("resources/output.xml");
             BufferedWriter outputFormattedXml = new BufferedWriter(new FileWriter("resources/formatted-output.xml"));
-            rss.getChannel().setLastBuildDate(DateConverter.convertDateToRFC2822(new Date()));
+            //            rss.getChannel().setLastBuildDate(DateConverter.convertDateToRFC2822(new Date()));
             marshaller.marshal(rss, outputXml);
             marshaller.marshal(rss, outputFormattedXml);
         } catch (JAXBException e) {

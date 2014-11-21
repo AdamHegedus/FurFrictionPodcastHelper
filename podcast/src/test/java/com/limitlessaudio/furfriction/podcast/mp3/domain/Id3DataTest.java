@@ -5,16 +5,16 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-/**Test class for {@link Id3v2Data} class.
+/**Test class for {@link Id3Data} class.
  * @author x
  */
-public class Id3v2DataTest {
+public class Id3DataTest {
 
-    private Id3v2Data underTest;
+    private Id3Data underTest;
 
     @Before
     public void setUp() {
-        underTest = new Id3v2Data();
+        underTest = new Id3Data();
     }
 
     @Test

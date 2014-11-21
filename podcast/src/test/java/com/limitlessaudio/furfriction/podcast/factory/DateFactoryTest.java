@@ -110,4 +110,29 @@ public class DateFactoryTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testConvertDateToRFC2822CET() {
+        // GIVEN
+        String expected = "Wed, 31 Dec 2014 20:00:00 +0100";
+        Calendar calendar = Calendar.getInstance();
+        calendar.clear();
+        calendar.set(2014, 11, 31, 20, 0, 0);
+        // WHEN
+        String actual = underTest.convertDateToRFC2822(calendar.getTime());
+        // THEN
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testConvertDateToRFC2822CEST() {
+        // GIVEN
+        String expected = "Sun, 25 May 2014 20:00:00 +0200";
+        Calendar calendar = Calendar.getInstance();
+        calendar.clear();
+        calendar.set(2014, 4, 25, 20, 0, 0);
+        // WHEN
+        String actual = underTest.convertDateToRFC2822(calendar.getTime());
+        // THEN
+        Assert.assertEquals(expected, actual);
+    }
 }

@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.Date;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -45,7 +44,7 @@ public final class MP3FileParser {
         item.setAuthor(id3.getArtist());
         item.setItunesSummary(id3.getComment());
         item.setItunesAuthor(id3.getArtist());
-        item.setPubDate(DateConverter.convertDateToRFC2822(new Date()));
+        //        item.setPubDate(DateConverter.convertDateToRFC2822(new Date()));
 
         ItunesCategoryType itunesCategory = new ItunesCategoryType();
         itunesCategory.setText("Music");
