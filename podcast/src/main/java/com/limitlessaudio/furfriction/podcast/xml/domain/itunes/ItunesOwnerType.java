@@ -1,4 +1,4 @@
-package com.limitlessaudio.furfriction.podcast.xml.itunes;
+package com.limitlessaudio.furfriction.podcast.xml.domain.itunes;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -46,7 +46,7 @@ public class ItunesOwnerType {
      * @param name
      *            allowed object is {@link String }
      */
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -64,7 +64,7 @@ public class ItunesOwnerType {
      * @param email
      *            allowed object is {@link String }
      */
-    public void setEmail(String email) {
+    public void setEmail(final String email) {
         this.email = email;
     }
 }

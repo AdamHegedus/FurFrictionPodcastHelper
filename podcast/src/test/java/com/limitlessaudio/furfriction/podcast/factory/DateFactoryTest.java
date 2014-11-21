@@ -22,6 +22,7 @@ public class DateFactoryTest {
     public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastSunday() {
         // GIVEN
         Calendar calendar = Calendar.getInstance();
+        calendar.clear();
         calendar.set(2014, 11, 28, 20, 0, 0);
         Date expected = calendar.getTime();
         // WHEN
@@ -34,6 +35,7 @@ public class DateFactoryTest {
     public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastMonday() {
         // GIVEN
         Calendar calendar = Calendar.getInstance();
+        calendar.clear();
         calendar.set(2014, 11, 29, 20, 0, 0);
         Date expected = calendar.getTime();
         // WHEN
@@ -46,6 +48,7 @@ public class DateFactoryTest {
     public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastTuesday() {
         // GIVEN
         Calendar calendar = Calendar.getInstance();
+        calendar.clear();
         calendar.set(2014, 11, 30, 20, 0, 0);
         Date expected = calendar.getTime();
         // WHEN
@@ -58,6 +61,7 @@ public class DateFactoryTest {
     public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastWednesday() {
         // GIVEN
         Calendar calendar = Calendar.getInstance();
+        calendar.clear();
         calendar.set(2014, 11, 31, 20, 0, 0);
         Date expected = calendar.getTime();
         // WHEN
@@ -70,6 +74,7 @@ public class DateFactoryTest {
     public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastThursday() {
         // GIVEN
         Calendar calendar = Calendar.getInstance();
+        calendar.clear();
         calendar.set(2014, 11, 25, 20, 0, 0);
         Date expected = calendar.getTime();
         // WHEN
@@ -82,6 +87,7 @@ public class DateFactoryTest {
     public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastFriday() throws InterruptedException {
         // GIVEN
         Calendar calendar = Calendar.getInstance();
+        calendar.clear();
         calendar.set(2014, 11, 26, 20, 0, 0);
         Date expected = calendar.getTime();
         // WHEN
@@ -95,6 +101,7 @@ public class DateFactoryTest {
     public void testGetMonthsLastDayAsDayOfWeekShouldReturnLastSaturday() {
         // GIVEN
         Calendar calendar = Calendar.getInstance();
+        calendar.clear();
         calendar.set(2014, 11, 27, 20, 0, 0);
         Date expected = calendar.getTime();
         // WHEN

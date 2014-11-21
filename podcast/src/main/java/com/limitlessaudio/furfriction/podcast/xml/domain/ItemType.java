@@ -1,4 +1,4 @@
-package com.limitlessaudio.furfriction.podcast.xml;
+package com.limitlessaudio.furfriction.podcast.xml.domain;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -6,8 +6,9 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesCategoryType;
-import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
+import com.limitlessaudio.furfriction.podcast.xml.AdapterCDATA;
+import com.limitlessaudio.furfriction.podcast.xml.domain.itunes.ItunesCategoryType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.itunes.ItunesImageType;
 
 /**<p>The item property is the main content of the podcast, the feed can has
  * multiple items. This Java class represents the "itemType" complex type in the
@@ -90,7 +91,7 @@ public class ItemType {
      * Setter method accepts {@link String} as parameter.
      * @param title allowed object is {@link String }
      */
-    public void setTitle(String title) {
+    public void setTitle(final String title) {
         this.title = title;
     }
 
@@ -106,7 +107,7 @@ public class ItemType {
      * Setter method accepts {@link String} as parameter.
      * @param link allowed object is {@link String }
      */
-    public void setLink(String link) {
+    public void setLink(final String link) {
         this.link = link;
     }
 
@@ -122,7 +123,7 @@ public class ItemType {
      * Setter method accepts {@link String} as parameter.
      * @param description allowed object is {@link String }
      */
-    public void setDescription(String description) {
+    public void setDescription(final String description) {
         this.description = description;
     }
 
@@ -148,7 +149,7 @@ public class ItemType {
      * with the podcast’s listing and chart placement in the iTunes Store.
      * @param guid the guid to set, allowed object is {@link String }
      */
-    public void setGuid(String guid) {
+    public void setGuid(final String guid) {
         this.guid = guid;
     }
 
@@ -164,7 +165,7 @@ public class ItemType {
      * Setter method accepts {@link EnclosureType} as parameter.
      * @param enclosure the enclosure to set
      */
-    public void setEnclosure(EnclosureType enclosure) {
+    public void setEnclosure(final EnclosureType enclosure) {
         this.enclosure = enclosure;
     }
 
@@ -190,7 +191,7 @@ public class ItemType {
      * Setter method accepts {@link String} as parameter.
      * @param pubDate the pubDate to set
      */
-    public void setPubDate(String pubDate) {
+    public void setPubDate(final String pubDate) {
         this.pubDate = pubDate;
     }
 
@@ -206,7 +207,7 @@ public class ItemType {
      * Setter method accepts {@link String} as parameter.
      * @param author the author to set
      */
-    public void setAuthor(String author) {
+    public void setAuthor(final String author) {
         this.author = author;
     }
 
@@ -224,7 +225,7 @@ public class ItemType {
      * Setter method accepts {@link String} as parameter.
      * @param itunesAuthor the itunesAuthor to set
      */
-    public void setItunesAuthor(String itunesAuthor) {
+    public void setItunesAuthor(final String itunesAuthor) {
         this.itunesAuthor = itunesAuthor;
     }
 
@@ -240,7 +241,7 @@ public class ItemType {
      * Setter method accepts {@link String} as parameter.
      * @param itunesSubtitle the itunesSubtitle to set
      */
-    public void setItunesSubtitle(String itunesSubtitle) {
+    public void setItunesSubtitle(final String itunesSubtitle) {
         this.itunesSubtitle = itunesSubtitle;
     }
 
@@ -262,7 +263,7 @@ public class ItemType {
      * Setter method accepts {@link String} as parameter.
      * @param itunesSummary the itunesSummary to set
      */
-    public void setItunesSummary(String itunesSummary) {
+    public void setItunesSummary(final String itunesSummary) {
         this.itunesSummary = itunesSummary;
     }
 
@@ -278,7 +279,7 @@ public class ItemType {
      * Setter method accepts {@link ItunesCategoryType} as parameter.
      * @param itunesCategory the itunesCategory to set
      */
-    public void setItunesCategory(ItunesCategoryType itunesCategory) {
+    public void setItunesCategory(final ItunesCategoryType itunesCategory) {
         this.itunesCategory = itunesCategory;
     }
 
@@ -306,7 +307,7 @@ public class ItemType {
      * Setter method accepts {@link String} as parameter.
      * @param itunesDuration the itunesDuration to set
      */
-    public void setItunesDuration(String itunesDuration) {
+    public void setItunesDuration(final String itunesDuration) {
         this.itunesDuration = itunesDuration;
     }
 
@@ -322,7 +323,7 @@ public class ItemType {
      * Setter method accepts {@link ItunesImageType} as parameter.
      * @param itunesImage the itunesImage to set
      */
-    public void setItunesImage(ItunesImageType itunesImage) {
+    public void setItunesImage(final ItunesImageType itunesImage) {
         this.itunesImage = itunesImage;
     }
 
@@ -342,7 +343,7 @@ public class ItemType {
      * Setter method accepts {@link String} as parameter.
      * @param itunesExplicit the itunesExplicit to set
      */
-    public void setItunesExplicit(String itunesExplicit) {
+    public void setItunesExplicit(final String itunesExplicit) {
         this.itunesExplicit = itunesExplicit;
     }
 

@@ -20,8 +20,8 @@ import org.slf4j.LoggerFactory;
 
 import com.limitlessaudio.furfriction.podcast.file.FileParser;
 import com.limitlessaudio.furfriction.podcast.util.DateConverter;
-import com.limitlessaudio.furfriction.podcast.xml.ItemType;
-import com.limitlessaudio.furfriction.podcast.xml.Rss;
+import com.limitlessaudio.furfriction.podcast.xml.domain.ItemType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.RssType;
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.UnsupportedTagException;
 import com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler;
@@ -53,9 +53,9 @@ public final class PodcastHelper {
 
         JAXBContext ctx;
         try {
-            ctx = JAXBContext.newInstance(Rss.class);
+            ctx = JAXBContext.newInstance(RssType.class);
             Unmarshaller unmarshaller = ctx.createUnmarshaller();
-            Rss rss = (Rss) unmarshaller.unmarshal(new File("resources/original.xml"));
+            RssType rss = (RssType) unmarshaller.unmarshal(new File("resources/original.xml"));
 
             for (ItemType item : rss.getChannel().getItem()) {
                 logger.debug(item.getAuthor() + " - " + item.getTitle());

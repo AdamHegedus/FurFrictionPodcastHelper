@@ -8,12 +8,12 @@ import javax.xml.bind.annotation.adapters.XmlAdapter;
 public class AdapterCDATA extends XmlAdapter<String, String> {
 
     @Override
-    public String unmarshal(String text) throws Exception {
+    public String unmarshal(final String text) throws Exception {
         return text;
     }
 
     @Override
-    public String marshal(String text) throws Exception {
+    public String marshal(final String text) throws Exception {
         return "<![CDATA[" + text + "]]>";
     }
 

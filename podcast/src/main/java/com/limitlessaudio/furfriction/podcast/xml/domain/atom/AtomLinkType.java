@@ -1,4 +1,4 @@
-package com.limitlessaudio.furfriction.podcast.xml.atom;
+package com.limitlessaudio.furfriction.podcast.xml.domain.atom;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -26,12 +26,13 @@ public class AtomLinkType {
     /**Empty.
      */
     public AtomLinkType() {
+        super();
     }
 
     /**Constructor sets members default to "self" and "application/rss+xml" with the given parameter as "href".
      * @param href is {@link String}, the xml file's URI
      */
-    public AtomLinkType(String href) {
+    public AtomLinkType(final String href) {
         this.href = href;
         this.rel = "self";
         this.type = "application/rss+xml";
@@ -50,7 +51,7 @@ public class AtomLinkType {
      * @param href
      *            the href to set
      */
-    public void setHref(String href) {
+    public void setHref(final String href) {
         this.href = href;
     }
 

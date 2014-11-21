@@ -1,4 +1,4 @@
-package com.limitlessaudio.furfriction.podcast.xml;
+package com.limitlessaudio.furfriction.podcast.xml.domain;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -51,7 +51,7 @@ public class ImageType {
     /**The url attribute is representing the URI of the image.
      * @param url allowed object is {@link String }
      */
-    public void setUrl(String url) {
+    public void setUrl(final String url) {
         this.url = url;
     }
 
@@ -67,7 +67,7 @@ public class ImageType {
      * &lt;img> tag when the channel is rendered in HTML.
      * @param title allowed object is {@link String }
      */
-    public void setTitle(String title) {
+    public void setTitle(final String title) {
         this.title = title;
     }
 
@@ -85,7 +85,7 @@ public class ImageType {
      * should have the same value as the channel's &lt;title> and &lt;link>
      * @param link allowed object is {@link String }
      */
-    public void setLink(String link) {
+    public void setLink(final String link) {
         this.link = link;
     }
 }

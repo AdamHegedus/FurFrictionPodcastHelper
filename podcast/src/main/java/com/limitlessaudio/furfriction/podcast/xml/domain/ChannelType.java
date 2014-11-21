@@ -1,4 +1,4 @@
-package com.limitlessaudio.furfriction.podcast.xml;
+package com.limitlessaudio.furfriction.podcast.xml.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,10 +8,10 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-import com.limitlessaudio.furfriction.podcast.xml.atom.AtomLinkType;
-import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesCategoryType;
-import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
-import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesOwnerType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.atom.AtomLinkType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.itunes.ItunesCategoryType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.itunes.ItunesImageType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.itunes.ItunesOwnerType;
 
 /**<p>Root element of the podcast. The following schema fragment specifies the expected
  * content contained within this class.</p>
@@ -110,7 +110,7 @@ public class ChannelType {
      * {@link AtomLinkType} as parameter.
      * @param atomLink the atomLink to set
      */
-    public void setAtomLink(AtomLinkType atomLink) {
+    public void setAtomLink(final AtomLinkType atomLink) {
         this.atomLink = atomLink;
     }
 
@@ -124,7 +124,7 @@ public class ChannelType {
     /**The name of the channel.
      * @param title allowed object is {@link String }
      */
-    public void setTitle(String title) {
+    public void setTitle(final String title) {
         this.title = title;
     }
 
@@ -138,7 +138,7 @@ public class ChannelType {
     /**The URL to the HTML website corresponding to the channel.
      * @param link allowed object is {@link String }
      */
-    public void setLink(String link) {
+    public void setLink(final String link) {
         this.link = link;
     }
 
@@ -156,7 +156,7 @@ public class ChannelType {
      * “en-us") are supported.
      * @param language allowed object is {@link String }
      */
-    public void setLanguage(String language) {
+    public void setLanguage(final String language) {
         this.language = language;
     }
 
@@ -170,7 +170,7 @@ public class ChannelType {
     /**Phrase or sentence describing the channel.
      * @param description allowed object is {@link String }
      */
-    public void setDescription(String description) {
+    public void setDescription(final String description) {
         this.description = description;
     }
 
@@ -196,7 +196,7 @@ public class ChannelType {
      * Setter method accepts {@link String} as parameter.
      * @param pubDate the pubDate to set
      */
-    public void setPubDate(String pubDate) {
+    public void setPubDate(final String pubDate) {
         this.pubDate = pubDate;
     }
 
@@ -210,7 +210,7 @@ public class ChannelType {
     /**Sets the value of the image property.
      * @param image allowed object is {@link ImageType }
      */
-    public void setImage(ImageType image) {
+    public void setImage(final ImageType image) {
         this.image = image;
     }
 
@@ -224,7 +224,7 @@ public class ChannelType {
     /**Copyright notice for content in the channel.
      * @param copyright allowed object is {@link String }
      */
-    public void setCopyright(String copyright) {
+    public void setCopyright(final String copyright) {
         this.copyright = copyright;
     }
 
@@ -265,7 +265,7 @@ public class ChannelType {
      * Setter method accepts {@link String} as parameter.
      * @param itunesAuthor the itunesAuthor to set
      */
-    public void setItunesAuthor(String itunesAuthor) {
+    public void setItunesAuthor(final String itunesAuthor) {
         this.itunesAuthor = itunesAuthor;
     }
 
@@ -283,7 +283,7 @@ public class ChannelType {
      * Setter method accepts {@link String} as parameter.
      * @param itunesSubtitle the itunesSubtitle to set
      */
-    public void setItunesSubtitle(String itunesSubtitle) {
+    public void setItunesSubtitle(final String itunesSubtitle) {
         this.itunesSubtitle = itunesSubtitle;
     }
 
@@ -307,7 +307,7 @@ public class ChannelType {
      * Setter method accepts {@link String} as parameter.
      * @param itunesSummary the itunesSummary to set
      */
-    public void setItunesSummary(String itunesSummary) {
+    public void setItunesSummary(final String itunesSummary) {
         this.itunesSummary = itunesSummary;
     }
 
@@ -341,7 +341,7 @@ public class ChannelType {
      * Setter method accepts {@link String} as parameter.
      * @param itunesExplicit the itunesExplicit to set
      */
-    public void setItunesExplicit(String itunesExplicit) {
+    public void setItunesExplicit(final String itunesExplicit) {
         this.itunesExplicit = itunesExplicit;
     }
 
@@ -361,7 +361,7 @@ public class ChannelType {
      * Setter method accepts {@link ItunesOwnerType} as parameter.
      * @param itunesOwner the itunesOwner to set.
      */
-    public void setItunesOwner(ItunesOwnerType itunesOwner) {
+    public void setItunesOwner(final ItunesOwnerType itunesOwner) {
         this.itunesOwner = itunesOwner;
     }
 
@@ -381,7 +381,7 @@ public class ChannelType {
      * Setter method accepts {@link String} as parameter.
      * @param managingEditor the managingEditor to set
      */
-    public void setManagingEditor(String managingEditor) {
+    public void setManagingEditor(final String managingEditor) {
         this.managingEditor = managingEditor;
     }
 
@@ -401,7 +401,7 @@ public class ChannelType {
      * Setter method accepts {@link String} as parameter.
      * @param webMaster the webMaster to set
      */
-    public void setWebMaster(String webMaster) {
+    public void setWebMaster(final String webMaster) {
         this.webMaster = webMaster;
     }
 
@@ -427,7 +427,7 @@ public class ChannelType {
      * Setter method accepts {@link String} as parameter.
      * @param lastBuildDate the lastBuildDate to set
      */
-    public void setLastBuildDate(String lastBuildDate) {
+    public void setLastBuildDate(final String lastBuildDate) {
         this.lastBuildDate = lastBuildDate;
     }
 
@@ -444,7 +444,7 @@ public class ChannelType {
      * parameter.
      * @param category the category to set
      */
-    public void setCategory(String category) {
+    public void setCategory(final String category) {
         this.category = category;
     }
 
@@ -462,7 +462,7 @@ public class ChannelType {
      * Setter method accepts {@link Integer} as parameter.
      * @param ttl the ttl to set
      */
-    public void setTtl(int ttl) {
+    public void setTtl(final int ttl) {
         this.ttl = ttl;
     }
 
@@ -478,7 +478,7 @@ public class ChannelType {
      * Setter method accepts {@link ItunesCategoryType} as parameter.
      * @param itunesCategory the itunesCategory to set
      */
-    public void setItunesCategory(ItunesCategoryType itunesCategory) {
+    public void setItunesCategory(final ItunesCategoryType itunesCategory) {
         this.itunesCategory = itunesCategory;
     }
 
@@ -494,7 +494,7 @@ public class ChannelType {
      * method accepts {@link ItunesImageType} as parameter.
      * @param itunesImage the itunesImage to set
      */
-    public void setItunesImage(ItunesImageType itunesImage) {
+    public void setItunesImage(final ItunesImageType itunesImage) {
         this.itunesImage = itunesImage;
     }
 }

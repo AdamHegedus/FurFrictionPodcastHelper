@@ -1,4 +1,4 @@
-package com.limitlessaudio.furfriction.podcast.xml.itunes;
+package com.limitlessaudio.furfriction.podcast.xml.domain.itunes;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -45,7 +45,7 @@ public class ItunesCategoryType {
      * Setter method accepts {@link String} as parameter.
      * @param text the text to set
      */
-    public void setText(String text) {
+    public void setText(final String text) {
         this.text = text;
     }
 

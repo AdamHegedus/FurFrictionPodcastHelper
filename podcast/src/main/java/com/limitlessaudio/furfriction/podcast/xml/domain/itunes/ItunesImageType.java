@@ -1,4 +1,4 @@
-package com.limitlessaudio.furfriction.podcast.xml.itunes;
+package com.limitlessaudio.furfriction.podcast.xml.domain.itunes;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -22,7 +22,7 @@ public class ItunesImageType {
     /**Default empty constructor used by JAXB marshal / unmarshal operations.
      */
     public ItunesImageType() {
-
+        super();
     }
 
     /**Sets the image's URI reference while instantiating.

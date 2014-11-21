@@ -1,4 +1,4 @@
-package com.limitlessaudio.furfriction.podcast.xml;
+package com.limitlessaudio.furfriction.podcast.xml.domain;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -78,7 +78,7 @@ public class EnclosureType {
      * Setter method accepts {@link String} as parameter
      * @param url the url to set
      */
-    public void setUrl(String url) {
+    public void setUrl(final String url) {
         this.url = url;
     }
 
@@ -94,7 +94,7 @@ public class EnclosureType {
      * Setter method accepts {@link Integer} as parameter
      * @param length the length to set
      */
-    public void setLength(int length) {
+    public void setLength(final int length) {
         this.length = length;
     }
 
@@ -132,7 +132,7 @@ public class EnclosureType {
      *  Setter method accepts {@link String} as parameter
      * @param type the type to set
      */
-    public void setType(String type) {
+    public void setType(final String type) {
         this.type = type;
     }
 

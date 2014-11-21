@@ -4,10 +4,10 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 import com.limitlessaudio.furfriction.podcast.mp3.domain.Id3v2Data;
-import com.limitlessaudio.furfriction.podcast.xml.EnclosureType;
-import com.limitlessaudio.furfriction.podcast.xml.ItemType;
-import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesCategoryType;
-import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.EnclosureType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.ItemType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.itunes.ItunesCategoryType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.itunes.ItunesImageType;
 
 /**Creates {@link ItemType} items.
  * @author x

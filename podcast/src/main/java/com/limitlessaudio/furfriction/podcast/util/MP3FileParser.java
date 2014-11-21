@@ -9,10 +9,10 @@ import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.limitlessaudio.furfriction.podcast.xml.EnclosureType;
-import com.limitlessaudio.furfriction.podcast.xml.ItemType;
-import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesCategoryType;
-import com.limitlessaudio.furfriction.podcast.xml.itunes.ItunesImageType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.EnclosureType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.ItemType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.itunes.ItunesCategoryType;
+import com.limitlessaudio.furfriction.podcast.xml.domain.itunes.ItunesImageType;
 import com.mpatric.mp3agic.ID3v2;
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.Mp3File;

@@ -1,4 +1,4 @@
-package com.limitlessaudio.furfriction.podcast.xml;
+package com.limitlessaudio.furfriction.podcast.xml.domain;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -34,12 +34,26 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {"channel"})
 @XmlRootElement(name = "rss")
-public class Rss {
+public class RssType {
 
     @XmlElement(required = true)
     private ChannelType channel;
     @XmlAttribute(name = "version", required = true)
     private String version;
+
+    /**Default empty constructor for JAXB operations.
+     */
+    public RssType() {
+        super();
+    }
+
+    /**Constructor to set channel data.
+     * @param channel the channel to set
+     */
+    public RssType(final ChannelType channel) {
+        this.channel = channel;
+        this.version = "2.0";
+    }
 
     /**The channel attribute is the real root element of a podcast feed.
      * It represents the channel element and the items.
@@ -55,7 +69,7 @@ public class Rss {
      * Setter method accepts {@link ChannelType} as parameter
      * @param channel the channel to set
      */
-    public void setChannel(ChannelType channel) {
+    public void setChannel(final ChannelType channel) {
         this.channel = channel;
     }
 }
