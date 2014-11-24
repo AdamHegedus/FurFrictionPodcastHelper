@@ -1,4 +1,4 @@
-package com.limitlessaudio.furfriction.podcast.mp3.domain;
+package com.limitlessaudio.furfriction.podcast.mp3.wrapper;
 
 import java.io.IOException;
 
@@ -25,13 +25,61 @@ public class Mp3Wrapper {
     private String trackNumber = "0";
     private long duration;
     private long filesize;
-    private Id3Data data;
 
-    /**Get {@link Id3Data} objects from given file.
-     * @param filename the filename to get parsed
-     * @return Id3Data
+    /**Gets the album field.
+     * @return the album
      */
-    public Id3Data getMp3Data(final String filename) {
+    public String getAlbum() {
+        return album;
+    }
+
+    /**Gets the artist field.
+     * @return the artist
+     */
+    public String getArtist() {
+        return artist;
+    }
+
+    /**Gets the comment field.
+     * @return the comment
+     */
+    public String getComment() {
+        return comment;
+    }
+
+    /**Gets the title.
+     * @return the title
+     */
+    public String getTitle() {
+        return title;
+    }
+
+    /**Gets the track number as {@link String}.
+     * @return the trackNumber
+     */
+    public String getTrackNumber() {
+        return trackNumber;
+    }
+
+    /**Gets the duration in long.
+     * @return the duration
+     */
+    public long getDuration() {
+        return duration;
+    }
+
+    /**Gets the filesize in long.
+     * @return the filesize
+     */
+    public long getFilesize() {
+        return filesize;
+    }
+
+    /**Get Mp3Wrapper objects from given file.
+     * @param filename the filename to get parsed
+     * @return Mp3Wrapper
+     */
+    public Mp3Wrapper getMp3Data(final String filename) {
         Mp3File file;
         try {
             file = new Mp3File(filename);
@@ -52,10 +100,8 @@ public class Mp3Wrapper {
         } catch (IOException e) {
             logger.warn(e.toString());
         }
-        data = new Id3Data();
-        setupId3Data();
 
-        return data;
+        return this;
 
     }
 
@@ -83,15 +129,5 @@ public class Mp3Wrapper {
         logger.debug("id3v1 title: " + title);
         trackNumber = id3.getTrack();
         logger.debug("id3v1 track: " + trackNumber);
-    }
-
-    private void setupId3Data() {
-        data.setAlbum(album);
-        data.setArtist(artist);
-        data.setComment(comment);
-        data.setDuration(duration);
-        data.setFilesize(filesize);
-        data.setTitle(title);
-        data.setTrackNumber(trackNumber);
     }
 }

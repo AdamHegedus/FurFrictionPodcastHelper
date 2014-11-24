@@ -7,7 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.limitlessaudio.furfriction.podcast.mp3.domain.Id3Data;
-import com.limitlessaudio.furfriction.podcast.mp3.domain.Mp3Wrapper;
+import com.limitlessaudio.furfriction.podcast.mp3.wrapper.Mp3Wrapper;
 import com.limitlessaudio.furfriction.podcast.xml.domain.ItemType;
 import com.limitlessaudio.furfriction.podcast.xml.factory.ItemFactory;
 import com.mpatric.mp3agic.ID3v2;
