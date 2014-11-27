@@ -156,5 +156,33 @@ A story which have an open end...]]></itunes:summary>
             <itunes:duration>1:19:20</itunes:duration>
             <itunes:image href="http://furfriction.com/podcast/episodes/001%20Epicentre.jpg"/>
         </item>
+        <item>
+            <title>Furst Contact</title>
+            <link>http://furfriction.com/podcast/episodes/Fur%20Friction%20001%20Fox%20Fairplay%20-%20Furst%20Contact.mp3</link>
+            <description> 000001A3 000001AF 00004C18 00004C9E 0020AA0A 000E1449 000087BA 00008A97 00113D92 00107AAC</description>
+            <guid>http://furfriction.com/podcast/episodes/Fur%20Friction%20001%20Fox%20Fairplay%20-%20Furst%20Contact.mp3</guid>
+            <enclosure url="http://furfriction.com/podcast/episodes/Fur%20Friction%20001%20Fox%20Fairplay%20-%20Furst%20Contact.mp3" length="87895261" type="audio/mpeg"/>
+            <author>Fox Fairplay</author>
+            <itunes:author>Fox Fairplay</itunes:author>
+            <itunes:subtitle>FUR FRICTION 001</itunes:subtitle>
+            <itunes:summary><![CDATA[ 000001A3 000001AF 00004C18 00004C9E 0020AA0A 000E1449 000087BA 00008A97 00113D92 00107AAC]]></itunes:summary>
+            <itunes:category text="Music"/>
+            <itunes:duration>36:36</itunes:duration>
+            <itunes:image href="http://furfriction.com/podcast/episodes/001%20Fur%20Friction.jpg"/>
+        </item>
+        <item>
+            <title>Fox And His Bunny</title>
+            <link>http://furfriction.com/podcast/episodes/Fur%20Friction%20005%20Fox%20Fairplay%20-%20Fox%20And%20His%20Bunny.mp3</link>
+            <description> 00000593 00000585 0000A892 0000AAAF 0008989C 0008989C 00008DCA 0000942A 0007CD0A 0006FBA7</description>
+            <guid>http://furfriction.com/podcast/episodes/Fur%20Friction%20005%20Fox%20Fairplay%20-%20Fox%20And%20His%20Bunny.mp3</guid>
+            <enclosure url="http://furfriction.com/podcast/episodes/Fur%20Friction%20005%20Fox%20Fairplay%20-%20Fox%20And%20His%20Bunny.mp3" length="151917698" type="audio/mpeg"/>
+            <author>Fox Fairplay</author>
+            <itunes:author>Fox Fairplay</itunes:author>
+            <itunes:subtitle>FUR FRICTION 005</itunes:subtitle>
+            <itunes:summary><![CDATA[ 00000593 00000585 0000A892 0000AAAF 0008989C 0008989C 00008DCA 0000942A 0007CD0A 0006FBA7]]></itunes:summary>
+            <itunes:category text="Music"/>
+            <itunes:duration>1:03:13</itunes:duration>
+            <itunes:image href="http://furfriction.com/podcast/episodes/005%20Fur%20Friction.jpg"/>
+        </item>
     </channel>
 </rss>

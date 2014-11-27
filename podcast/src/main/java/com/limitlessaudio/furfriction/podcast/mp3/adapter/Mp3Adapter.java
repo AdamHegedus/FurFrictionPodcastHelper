@@ -1,4 +1,4 @@
-package com.limitlessaudio.furfriction.podcast.mp3.wrapper;
+package com.limitlessaudio.furfriction.podcast.mp3.adapter;
 
 import java.io.IOException;
 
@@ -14,9 +14,9 @@ import com.mpatric.mp3agic.UnsupportedTagException;
 /**Wrapper class for com.mpatric.mp3agic third party library.
  * @author adam_hegedus
  */
-public class Mp3Wrapper {
+public class Mp3Adapter implements Mp3 {
 
-    private Logger logger = LoggerFactory.getLogger(Mp3Wrapper.class);
+    private Logger logger = LoggerFactory.getLogger(Mp3Adapter.class);
 
     private String album = "";
     private String artist = "";
@@ -29,6 +29,7 @@ public class Mp3Wrapper {
     /**Gets the album field.
      * @return the album
      */
+    @Override
     public String getAlbum() {
         return album;
     }
@@ -36,6 +37,7 @@ public class Mp3Wrapper {
     /**Gets the artist field.
      * @return the artist
      */
+    @Override
     public String getArtist() {
         return artist;
     }
@@ -43,6 +45,7 @@ public class Mp3Wrapper {
     /**Gets the comment field.
      * @return the comment
      */
+    @Override
     public String getComment() {
         return comment;
     }
@@ -50,6 +53,7 @@ public class Mp3Wrapper {
     /**Gets the title.
      * @return the title
      */
+    @Override
     public String getTitle() {
         return title;
     }
@@ -57,6 +61,7 @@ public class Mp3Wrapper {
     /**Gets the track number as {@link String}.
      * @return the trackNumber
      */
+    @Override
     public String getTrackNumber() {
         return trackNumber;
     }
@@ -64,6 +69,7 @@ public class Mp3Wrapper {
     /**Gets the duration in long.
      * @return the duration
      */
+    @Override
     public long getDuration() {
         return duration;
     }
@@ -71,15 +77,15 @@ public class Mp3Wrapper {
     /**Gets the filesize in long.
      * @return the filesize
      */
+    @Override
     public long getFilesize() {
         return filesize;
     }
 
     /**Get Mp3Wrapper objects from given file.
      * @param filename the filename to get parsed
-     * @return Mp3Wrapper
      */
-    public Mp3Wrapper getMp3Data(final String filename) {
+    public void processMp3(final String filename) {
         Mp3File file;
         try {
             file = new Mp3File(filename);
@@ -100,9 +106,6 @@ public class Mp3Wrapper {
         } catch (IOException e) {
             logger.warn(e.toString());
         }
-
-        return this;
-
     }
 
     private void processId3v2(final ID3v2 id3) {

@@ -7,7 +7,7 @@ import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.io.Writer;
+import java.util.List;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -18,11 +18,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.limitlessaudio.furfriction.podcast.file.FileParser;
+import com.limitlessaudio.furfriction.podcast.xml.CharacterEscapeHandler;
 import com.limitlessaudio.furfriction.podcast.xml.domain.ItemType;
 import com.limitlessaudio.furfriction.podcast.xml.domain.RssType;
-import com.mpatric.mp3agic.InvalidDataException;
-import com.mpatric.mp3agic.UnsupportedTagException;
-import com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler;
 
 /**The main application.
  * @author Adam_Hegedus
@@ -43,11 +41,11 @@ public final class PodcastHelper {
     /** The main entry point of the application.
      * @param args command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         logger.debug("Application Entry.");
         FileParser parser = new FileParser(new File(DIRECTORY));
-        //        parser.parseDirectory();
+        List<ItemType> newItems = parser.getItems(DIRECTORY);
 
         JAXBContext ctx;
         try {
@@ -59,23 +57,16 @@ public final class PodcastHelper {
                 logger.debug(item.getAuthor() + " - " + item.getTitle());
             }
 
-            try {
-                ItemType item = parser.getParsedItemSkeleton(TEST_FILE);
-                rss.getChannel().getItem().add(item);
+            ItemType item = parser.getParsedItemSkeleton(TEST_FILE);
+            rss.getChannel().getItem().add(item);
 
-            } catch (UnsupportedTagException | InvalidDataException | IOException e) {
-                logger.warn(e.toString());
+            for (ItemType newitem : newItems) {
+                rss.getChannel().getItem().add(newitem);
             }
 
             Marshaller marshaller = ctx.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-
-            marshaller.setProperty(CharacterEscapeHandler.class.getName(), new CharacterEscapeHandler() {
-                @Override
-                public void escape(char[] characters, int start, int length, boolean arg3, Writer writer) throws IOException {
-                    writer.write(characters, start, length);
-                }
-            });
+            marshaller.setProperty("com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler", new CharacterEscapeHandler());
             OutputStream outputXml = new FileOutputStream("resources/output.xml");
             BufferedWriter outputFormattedXml = new BufferedWriter(new FileWriter("resources/formatted-output.xml"));
             //            rss.getChannel().setLastBuildDate(DateConverter.convertDateToRFC2822(new Date()));
