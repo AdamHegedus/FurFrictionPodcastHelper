@@ -39,8 +39,8 @@ public class ItemFactory {
         item.setDescription(data.getComment());
         final String guid = url
                 + "episodes/"
-                + encodeURI(data.getAlbum() + " " + data.getTrackNumberFormattedToThreeCharacter() + " " + data.getArtist() + " - " + data.getTitle()
-                        + ".mp3");
+                + encodeURI(data.getAlbum().toUpperCase() + " " + data.getTrackNumberFormattedToThreeCharacter() + " " + data.getArtist() + " - "
+                        + data.getTitle() + ".mp3");
         item.setGuid(guid);
         item.setLink(guid);
         final EnclosureType enclosure = new EnclosureType();

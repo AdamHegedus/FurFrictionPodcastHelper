@@ -53,13 +53,6 @@ public final class PodcastHelper {
             Unmarshaller unmarshaller = ctx.createUnmarshaller();
             RssType rss = (RssType) unmarshaller.unmarshal(new File("resources/original.xml"));
 
-            for (ItemType item : rss.getChannel().getItem()) {
-                logger.debug(item.getAuthor() + " - " + item.getTitle());
-            }
-
-            ItemType item = parser.getParsedItemSkeleton(TEST_FILE);
-            rss.getChannel().getItem().add(item);
-
             for (ItemType newitem : newItems) {
                 rss.getChannel().getItem().add(newitem);
             }
